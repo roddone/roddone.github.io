@@ -103,6 +103,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
 /* harmony import */ var _pages_jioc_jioc_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/jioc/jioc.component */ "./src/app/pages/jioc/jioc.component.ts");
 /* harmony import */ var _shared_app_constants__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./shared/app-constants */ "./src/app/shared/app-constants.ts");
+/* harmony import */ var _shared_sub_navigation_sub_navigation_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./shared/sub-navigation/sub-navigation.component */ "./src/app/shared/sub-navigation/sub-navigation.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -114,6 +115,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 // import { MaterialModulesModule } from './shared/material-modules/material-modules.module'
+
 
 
 
@@ -134,7 +136,8 @@ var AppModule = /** @class */ (function () {
                 _pages_about_about_component__WEBPACK_IMPORTED_MODULE_7__["AboutComponent"],
                 _shared_navigation_navigation_component__WEBPACK_IMPORTED_MODULE_8__["NavigationComponent"],
                 _pages_home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"],
-                _pages_jioc_jioc_component__WEBPACK_IMPORTED_MODULE_10__["JiocComponent"]
+                _pages_jioc_jioc_component__WEBPACK_IMPORTED_MODULE_10__["JiocComponent"],
+                _shared_sub_navigation_sub_navigation_component__WEBPACK_IMPORTED_MODULE_12__["SubNavigationComponent"]
             ],
             imports: [
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
@@ -298,7 +301,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  jioc works!\n</p>\n"
+module.exports = "<app-sub-navigation [urls]=\"[Constants.JIOC_HOME_PATH, Constants.JIOC_README_PATH]\"></app-sub-navigation>\n\n<markdown src=\"https://raw.githubusercontent.com/roddone/jioc/master/README.md\"></markdown>"
 
 /***/ }),
 
@@ -313,6 +316,8 @@ module.exports = "<p>\n  jioc works!\n</p>\n"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JiocComponent", function() { return JiocComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _shared_app_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../shared/app-constants */ "./src/app/shared/app-constants.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -323,8 +328,12 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var JiocComponent = /** @class */ (function () {
-    function JiocComponent() {
+    function JiocComponent(router) {
+        this.router = router;
+        this.Constants = _shared_app_constants__WEBPACK_IMPORTED_MODULE_2__["Constants"];
     }
     JiocComponent.prototype.ngOnInit = function () {
     };
@@ -334,7 +343,7 @@ var JiocComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./jioc.component.html */ "./src/app/pages/jioc/jioc.component.html"),
             styles: [__webpack_require__(/*! ./jioc.component.css */ "./src/app/pages/jioc/jioc.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
     ], JiocComponent);
     return JiocComponent;
 }());
@@ -361,7 +370,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"nav nav-pills\">\n    <a class=\"nav-link active\" \n        [routerLink]=\"['/' + constants.YEELIGHTAPI_HOME_PATH]\"\n        [ngClass]=\"{'active': router.url == '/' + constants.YEELIGHTAPI_HOME_PATH}\">Active</a>\n    <a class=\"nav-link\" \n        [routerLink]=\"['/' + constants.YEELIGHTAPI_README_PATH]\"\n        [ngClass]=\"{'active': router.url == '/' + constants.YEELIGHTAPI_README_PATH}\">Readme</a>\n  </nav>\n\n  <markdown src=\"https://raw.githubusercontent.com/roddone/YeelightAPI/master/README.md\"></markdown>"
+module.exports = "<app-sub-navigation [urls]=\"[Constants.YEELIGHTAPI_HOME_PATH, Constants.YEELIGHTAPI_README_PATH]\"></app-sub-navigation>\n\n<markdown src=\"https://raw.githubusercontent.com/roddone/YeelightAPI/master/README.md\"></markdown>"
 
 /***/ }),
 
@@ -391,10 +400,9 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var YeelightAPIComponent = /** @class */ (function () {
-    function YeelightAPIComponent(router, constants) {
+    function YeelightAPIComponent(router) {
         this.router = router;
-        this.constants = constants;
-        console.log(constants);
+        this.Constants = _shared_app_constants__WEBPACK_IMPORTED_MODULE_2__["Constants"];
     }
     YeelightAPIComponent.prototype.ngOnInit = function () {
     };
@@ -404,7 +412,7 @@ var YeelightAPIComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./yeelight-api.component.html */ "./src/app/pages/yeelight-api/yeelight-api.component.html"),
             styles: [__webpack_require__(/*! ./yeelight-api.component.css */ "./src/app/pages/yeelight-api/yeelight-api.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _shared_app_constants__WEBPACK_IMPORTED_MODULE_2__["Constants"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
     ], YeelightAPIComponent);
     return YeelightAPIComponent;
 }());
@@ -425,12 +433,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Constants", function() { return Constants; });
 var Constants = /** @class */ (function () {
     function Constants() {
-        this.HOME_PATH = Constants.HOME_PATH;
-        this.YEELIGHTAPI_PATH = Constants.YEELIGHTAPI_PATH;
-        this.YEELIGHTAPI_HOME_PATH = Constants.YEELIGHTAPI_HOME_PATH;
-        this.YEELIGHTAPI_README_PATH = Constants.YEELIGHTAPI_README_PATH;
-        this.ABOUT_PATH = Constants.ABOUT_PATH;
-        this.JIOC_PATH = Constants.JIOC_PATH;
     }
     Constants.HOME_PATH = 'home';
     Constants.YEELIGHTAPI_PATH = 'yeelightapi';
@@ -438,6 +440,8 @@ var Constants = /** @class */ (function () {
     Constants.YEELIGHTAPI_README_PATH = 'yeelightapi/readme';
     Constants.ABOUT_PATH = 'about';
     Constants.JIOC_PATH = 'jioc';
+    Constants.JIOC_HOME_PATH = 'jioc/home';
+    Constants.JIOC_README_PATH = 'jioc/readme';
     return Constants;
 }());
 
@@ -463,7 +467,7 @@ module.exports = ".flex-spacer{\r\n    flex-grow: 1;\r\n}\r\n#profile-picture{\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-dark bg-dark navbar-expand-lg\">\n    <a class=\"navbar-brand\" routerLink=\"/\">\n        <img id=\"profile-picture\"\n            (mouseenter)=\"mouseAction(true)\" (mouseleave)=\"mouseAction(false)\"\n            [ngClass]=\"{'big': _in}\"\n            src=\"/assets/profilepicture.jpg\"> Romain ODDONE</a>\n\n    <div class=\"flex-spacer\"></div>\n\n    <a [routerLink]=\"['/' + constants.YEELIGHTAPI_HOME_PATH]\" class=\"btn\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + constants.YEELIGHTAPI_HOME_PATH, 'btn-primary': router.url !== '/' + constants.YEELIGHTAPI_HOME_PATH }\">Yeelight API</a>\n\n    <a [routerLink]=\"['/' + constants.ABOUT_PATH]\" class=\"btn btn-outline-primary\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + constants.ABOUT_PATH, 'btn-primary': router.url !== '/' + constants.ABOUT_PATH }\">About</a>\n\n</nav>"
+module.exports = "<nav class=\"navbar navbar-dark bg-dark navbar-expand-lg\">\n    <a class=\"navbar-brand\" routerLink=\"/\">\n        <img id=\"profile-picture\"\n            (mouseenter)=\"mouseAction(true)\" (mouseleave)=\"mouseAction(false)\"\n            [ngClass]=\"{'big': _in}\"\n            src=\"/assets/profilepicture.jpg\"> Romain ODDONE</a>\n\n    <div class=\"flex-spacer\"></div>\n\n    <a [routerLink]=\"['/' + Constants.YEELIGHTAPI_HOME_PATH]\" class=\"btn\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.YEELIGHTAPI_HOME_PATH, 'btn-primary': router.url !== '/' + Constants.YEELIGHTAPI_HOME_PATH }\">Yeelight API</a>\n\n    <a [routerLink]=\"['/' + Constants.JIOC_HOME_PATH]\" class=\"btn\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.JIOC_HOME_PATH, 'btn-primary': router.url !== '/' + Constants.JIOC_HOME_PATH }\">JioC</a>\n\n    <a [routerLink]=\"['/' + Constants.ABOUT_PATH]\" class=\"btn btn-outline-primary\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.ABOUT_PATH, 'btn-primary': router.url !== '/' + Constants.ABOUT_PATH }\">About</a>\n\n</nav>"
 
 /***/ }),
 
@@ -496,6 +500,7 @@ var NavigationComponent = /** @class */ (function () {
     function NavigationComponent(router, constants) {
         this.router = router;
         this.constants = constants;
+        this.Constants = src_app_shared_app_constants__WEBPACK_IMPORTED_MODULE_2__["Constants"];
         this._in = false;
     }
     NavigationComponent.prototype.mouseAction = function (state) {
@@ -560,7 +565,9 @@ var routes = [
     { path: _app_constants__WEBPACK_IMPORTED_MODULE_6__["Constants"].YEELIGHTAPI_HOME_PATH, component: _pages_yeelight_api_yeelight_api_component__WEBPACK_IMPORTED_MODULE_2__["YeelightAPIComponent"] },
     { path: _app_constants__WEBPACK_IMPORTED_MODULE_6__["Constants"].YEELIGHTAPI_README_PATH, component: _pages_yeelight_api_yeelight_api_component__WEBPACK_IMPORTED_MODULE_2__["YeelightAPIComponent"] },
     { path: _app_constants__WEBPACK_IMPORTED_MODULE_6__["Constants"].ABOUT_PATH, component: _pages_about_about_component__WEBPACK_IMPORTED_MODULE_3__["AboutComponent"] },
-    { path: _app_constants__WEBPACK_IMPORTED_MODULE_6__["Constants"].JIOC_PATH, component: _pages_jioc_jioc_component__WEBPACK_IMPORTED_MODULE_5__["JiocComponent"] },
+    { path: _app_constants__WEBPACK_IMPORTED_MODULE_6__["Constants"].JIOC_PATH, redirectTo: _app_constants__WEBPACK_IMPORTED_MODULE_6__["Constants"].JIOC_HOME_PATH },
+    { path: _app_constants__WEBPACK_IMPORTED_MODULE_6__["Constants"].JIOC_HOME_PATH, component: _pages_jioc_jioc_component__WEBPACK_IMPORTED_MODULE_5__["JiocComponent"] },
+    { path: _app_constants__WEBPACK_IMPORTED_MODULE_6__["Constants"].JIOC_README_PATH, component: _pages_jioc_jioc_component__WEBPACK_IMPORTED_MODULE_5__["JiocComponent"] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -572,6 +579,76 @@ var AppRoutingModule = /** @class */ (function () {
         })
     ], AppRoutingModule);
     return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/sub-navigation/sub-navigation.component.css":
+/*!********************************************************************!*\
+  !*** ./src/app/shared/sub-navigation/sub-navigation.component.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/shared/sub-navigation/sub-navigation.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/shared/sub-navigation/sub-navigation.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"nav nav-pills\">\n    <a class=\"nav-link active\" \n        [routerLink]=\"['/' + urls[0]]\"\n        [ngClass]=\"{'active': router.url == '/' + urls[0]}\">Informations</a>\n    <a class=\"nav-link\" \n        [routerLink]=\"['/' + urls[1]]\"\n        [ngClass]=\"{'active': router.url == '/' +urls[1]}\">Readme</a>\n  </nav>\n"
+
+/***/ }),
+
+/***/ "./src/app/shared/sub-navigation/sub-navigation.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/shared/sub-navigation/sub-navigation.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: SubNavigationComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SubNavigationComponent", function() { return SubNavigationComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SubNavigationComponent = /** @class */ (function () {
+    function SubNavigationComponent(router) {
+        this.router = router;
+    }
+    SubNavigationComponent.prototype.ngOnInit = function () {
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], SubNavigationComponent.prototype, "urls", void 0);
+    SubNavigationComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-sub-navigation',
+            template: __webpack_require__(/*! ./sub-navigation.component.html */ "./src/app/shared/sub-navigation/sub-navigation.component.html"),
+            styles: [__webpack_require__(/*! ./sub-navigation.component.css */ "./src/app/shared/sub-navigation/sub-navigation.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+    ], SubNavigationComponent);
+    return SubNavigationComponent;
 }());
 
 
