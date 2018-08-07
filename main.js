@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<app-navigation></app-navigation>\n<!-- <div style=\"height:60px;\"></div> -->\n  <!--<h1>\n    Welcome to {{ title }}!\n  </h1>\n   <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\n</div>\n<h2>Here are some links to help you start: </h2>\n<ul>\n  <li>\n    <h2><a routerLink=\"/yeelightapi\">YeelightAPI</a></h2>\n  </li>\n  <li><a routerLink=\"/about\">A Propos</a></li>\n</ul> -->\n<div style=\"margin:15px;height: calc(100vh - 75px);overflow-y: auto;\">\n  <router-outlet></router-outlet>\n</div>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<app-navigation></app-navigation>\r\n<!-- <div style=\"height:60px;\"></div> -->\r\n  <!--<h1>\r\n    Welcome to {{ title }}!\r\n  </h1>\r\n   <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\r\n</div>\r\n<h2>Here are some links to help you start: </h2>\r\n<ul>\r\n  <li>\r\n    <h2><a routerLink=\"/yeelightapi\">YeelightAPI</a></h2>\r\n  </li>\r\n  <li><a routerLink=\"/about\">A Propos</a></li>\r\n</ul> -->\r\n<div style=\"margin:15px;height: calc(100vh - 75px);overflow-y: auto;\">\r\n  <router-outlet></router-outlet>\r\n</div>"
 
 /***/ }),
 
@@ -175,7 +175,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  about works!\n</p>\n"
+module.exports = "<p>\r\n  about works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -238,7 +238,7 @@ module.exports = ".card-img-top{\r\n    width:64px;\r\n    height:64px;\r\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex justify-content-around\">\n\t<div class=\"card\" style=\"width: 18rem;\">\n\t\t<img class=\"card-img-top\" src=\"https://raw.githubusercontent.com/roddone/YeelightAPI/master/YeelightAPI/icon.png\" alt=\"YeelightAPI logo\">\n\t\t<div class=\"card-body\">\n\t\t\t<h5 class=\"card-title\">Yeelight API</h5>\n\t\t\t<p class=\"card-text\">C# API (.Net) to control Xiaomi Yeelight devices</p>\n\t\t\t<a routerLink=\"/yeelightapi\" class=\"btn btn-primary\">See more</a>\n\t\t</div>\n\t</div>\n\t<div class=\"card\" style=\"width: 18rem;\">\n\t\t\t<img class=\"card-img-top\" src=\"https://raw.githubusercontent.com/roddone/YeelightAPI/master/YeelightAPI/icon.png\" alt=\"Jioc logo\">\n\t\t\t<div class=\"card-body\">\n\t\t\t\t<h5 class=\"card-title\">Jioc</h5>\n\t\t\t\t<p class=\"card-text\">Lightweight JavaScript IoC Library</p>\n\t\t\t\t<a routerLink=\"/jioc\" class=\"btn btn-primary\">See more</a>\n\t\t\t</div>\n\t\t</div>\n</div>"
+module.exports = "<div class=\"d-flex justify-content-around\">\r\n\t<div class=\"card text-center\" style=\"width: 18rem;\">\r\n\t\t<img class=\"card-img-top mx-auto\" src=\"https://raw.githubusercontent.com/roddone/YeelightAPI/master/YeelightAPI/icon.png\" alt=\"YeelightAPI logo\">\r\n\t\t<div class=\"card-body\">\r\n\t\t\t<h5 class=\"card-title\">Yeelight API</h5>\r\n\t\t\t<p class=\"card-text\">C# API (.Net) to control Xiaomi Yeelight devices</p>\r\n\t\t\t<a routerLink=\"/yeelightapi\" class=\"btn btn-primary\">See more</a>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"card text-center\" style=\"width: 18rem;\">\r\n\t\t\t<img class=\"card-img-top mx-auto\" src=\"/assets/js-logo.png\" alt=\"Jioc logo\">\r\n\t\t\t<div class=\"card-body\">\r\n\t\t\t\t<h5 class=\"card-title\">Jioc</h5>\r\n\t\t\t\t<p class=\"card-text\">Lightweight JavaScript IoC Library</p>\r\n\t\t\t\t<a routerLink=\"/jioc\" class=\"btn btn-primary\">See more</a>\r\n\t\t\t</div>\r\n\t\t</div>\r\n</div>"
 
 /***/ }),
 
@@ -301,7 +301,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-sub-navigation [urls]=\"[Constants.JIOC_HOME_PATH, Constants.JIOC_README_PATH]\"></app-sub-navigation>\n\n<markdown src=\"https://raw.githubusercontent.com/roddone/jioc/master/README.md\"></markdown>"
+module.exports = "<app-sub-navigation [urls]=\"[Constants.JIOC_HOME_PATH, Constants.JIOC_README_PATH]\"></app-sub-navigation>\r\n\r\n<markdown src=\"https://raw.githubusercontent.com/roddone/jioc/master/README.md\"></markdown>"
 
 /***/ }),
 
@@ -370,7 +370,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-sub-navigation [urls]=\"[Constants.YEELIGHTAPI_HOME_PATH, Constants.YEELIGHTAPI_README_PATH]\"></app-sub-navigation>\n\n<markdown src=\"https://raw.githubusercontent.com/roddone/YeelightAPI/master/README.md\"></markdown>"
+module.exports = "<app-sub-navigation [urls]=\"[Constants.YEELIGHTAPI_HOME_PATH, Constants.YEELIGHTAPI_README_PATH]\"></app-sub-navigation>\r\n\r\n<markdown src=\"https://raw.githubusercontent.com/roddone/YeelightAPI/master/README.md\"></markdown>"
 
 /***/ }),
 
@@ -467,7 +467,7 @@ module.exports = ".flex-spacer{\r\n    flex-grow: 1;\r\n}\r\n#profile-picture{\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-dark bg-dark navbar-expand-lg\">\n    <a class=\"navbar-brand\" routerLink=\"/\">\n        <img id=\"profile-picture\"\n            (mouseenter)=\"mouseAction(true)\" (mouseleave)=\"mouseAction(false)\"\n            [ngClass]=\"{'big': _in}\"\n            src=\"/assets/profilepicture.jpg\"> Romain ODDONE</a>\n\n    <div class=\"flex-spacer\"></div>\n\n    <a [routerLink]=\"['/' + Constants.YEELIGHTAPI_HOME_PATH]\" class=\"btn\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.YEELIGHTAPI_HOME_PATH, 'btn-primary': router.url !== '/' + Constants.YEELIGHTAPI_HOME_PATH }\">Yeelight API</a>\n\n    <a [routerLink]=\"['/' + Constants.JIOC_HOME_PATH]\" class=\"btn\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.JIOC_HOME_PATH, 'btn-primary': router.url !== '/' + Constants.JIOC_HOME_PATH }\">JioC</a>\n\n    <a [routerLink]=\"['/' + Constants.ABOUT_PATH]\" class=\"btn btn-outline-primary\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.ABOUT_PATH, 'btn-primary': router.url !== '/' + Constants.ABOUT_PATH }\">About</a>\n\n</nav>"
+module.exports = "<nav class=\"navbar navbar-dark bg-dark navbar-expand-lg\">\r\n    <a class=\"navbar-brand\" routerLink=\"/\">\r\n        <img id=\"profile-picture\"\r\n            (mouseenter)=\"mouseAction(true)\" (mouseleave)=\"mouseAction(false)\"\r\n            [ngClass]=\"{'big': _in}\"\r\n            src=\"/assets/profilepicture.jpg\"> Romain ODDONE</a>\r\n\r\n    <div class=\"flex-spacer\"></div>\r\n\r\n    <a [routerLink]=\"['/' + Constants.YEELIGHTAPI_HOME_PATH]\" class=\"btn\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.YEELIGHTAPI_HOME_PATH, 'btn-primary': router.url !== '/' + Constants.YEELIGHTAPI_HOME_PATH }\">Yeelight API</a>\r\n\r\n    <a [routerLink]=\"['/' + Constants.JIOC_HOME_PATH]\" class=\"btn\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.JIOC_HOME_PATH, 'btn-primary': router.url !== '/' + Constants.JIOC_HOME_PATH }\">JioC</a>\r\n\r\n    <a [routerLink]=\"['/' + Constants.ABOUT_PATH]\" class=\"btn btn-outline-primary\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.ABOUT_PATH, 'btn-primary': router.url !== '/' + Constants.ABOUT_PATH }\">About</a>\r\n\r\n</nav>"
 
 /***/ }),
 
@@ -603,7 +603,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"nav nav-pills\">\n    <a class=\"nav-link active\" \n        [routerLink]=\"['/' + urls[0]]\"\n        [ngClass]=\"{'active': router.url == '/' + urls[0]}\">Informations</a>\n    <a class=\"nav-link\" \n        [routerLink]=\"['/' + urls[1]]\"\n        [ngClass]=\"{'active': router.url == '/' +urls[1]}\">Readme</a>\n  </nav>\n"
+module.exports = "<nav class=\"nav nav-pills\">\r\n    <a class=\"nav-link active\" \r\n        [routerLink]=\"['/' + urls[0]]\"\r\n        [ngClass]=\"{'active': router.url == '/' + urls[0]}\">Informations</a>\r\n    <a class=\"nav-link\" \r\n        [routerLink]=\"['/' + urls[1]]\"\r\n        [ngClass]=\"{'active': router.url == '/' +urls[1]}\">Readme</a>\r\n  </nav>\r\n"
 
 /***/ }),
 
