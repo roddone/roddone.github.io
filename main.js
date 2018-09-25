@@ -175,7 +175,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  about works!\r\n</p>\r\n"
+module.exports = "<p>\r\n  There's some mor work to be done ...\r\n</p>\r\n"
 
 /***/ }),
 
@@ -238,7 +238,7 @@ module.exports = ".card-img-top{\r\n    width:64px;\r\n    height:64px;\r\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex justify-content-around\">\r\n\t<div class=\"card text-center\" style=\"width: 18rem;\">\r\n\t\t<img class=\"card-img-top mx-auto\" src=\"https://raw.githubusercontent.com/roddone/YeelightAPI/master/YeelightAPI/icon.png\" alt=\"YeelightAPI logo\">\r\n\t\t<div class=\"card-body\">\r\n\t\t\t<h5 class=\"card-title\">Yeelight API</h5>\r\n\t\t\t<p class=\"card-text\">C# API (.Net) to control Xiaomi Yeelight devices</p>\r\n\t\t\t<a routerLink=\"/yeelightapi\" class=\"btn btn-primary\">See more</a>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"card text-center\" style=\"width: 18rem;\">\r\n\t\t\t<img class=\"card-img-top mx-auto\" src=\"/assets/js-logo.png\" alt=\"Jioc logo\">\r\n\t\t\t<div class=\"card-body\">\r\n\t\t\t\t<h5 class=\"card-title\">Jioc</h5>\r\n\t\t\t\t<p class=\"card-text\">Lightweight JavaScript IoC Library</p>\r\n\t\t\t\t<a routerLink=\"/jioc\" class=\"btn btn-primary\">See more</a>\r\n\t\t\t</div>\r\n\t\t</div>\r\n</div>"
+module.exports = "<div class=\"d-flex justify-content-around\">\r\n\t<div class=\"card text-center\" style=\"width: 18rem;\">\r\n\t\t<img class=\"card-img-top mx-auto\" src=\"https://raw.githubusercontent.com/roddone/YeelightAPI/master/YeelightAPI/icon.png\" alt=\"YeelightAPI logo\">\r\n\t\t<div class=\"card-body\">\r\n\t\t\t<h5 class=\"card-title\">Yeelight API</h5>\r\n\t\t\t<p class=\"card-text\">C# API (.Net) to control Xiaomi Yeelight devices</p>\r\n\t\t\t<a routerLink=\"/yeelightapi\" class=\"btn btn-primary\">See more</a>\r\n\t\t</div>\r\n\t</div>\r\n\t<!-- <div class=\"card text-center\" style=\"width: 18rem;\">\r\n\t\t\t<img class=\"card-img-top mx-auto\" src=\"/assets/js-logo.png\" alt=\"Jioc logo\">\r\n\t\t\t<div class=\"card-body\">\r\n\t\t\t\t<h5 class=\"card-title\">Jioc</h5>\r\n\t\t\t\t<p class=\"card-text\">Lightweight JavaScript IoC Library</p>\r\n\t\t\t\t<a routerLink=\"/jioc\" class=\"btn btn-primary\">See more</a>\r\n\t\t\t</div>\r\n\t\t</div> -->\r\n</div>"
 
 /***/ }),
 
@@ -467,7 +467,7 @@ module.exports = ".flex-spacer{\r\n    flex-grow: 1;\r\n}\r\n#profile-picture{\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-dark bg-dark navbar-expand-lg\">\r\n    <a class=\"navbar-brand\" routerLink=\"/\">\r\n        <img id=\"profile-picture\"\r\n            (mouseenter)=\"mouseAction(true)\" (mouseleave)=\"mouseAction(false)\"\r\n            [ngClass]=\"{'big': _in}\"\r\n            src=\"/assets/profilepicture.jpg\"> Romain ODDONE</a>\r\n\r\n    <div class=\"flex-spacer\"></div>\r\n\r\n    <a [routerLink]=\"['/' + Constants.YEELIGHTAPI_HOME_PATH]\" class=\"btn\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.YEELIGHTAPI_HOME_PATH, 'btn-primary': router.url !== '/' + Constants.YEELIGHTAPI_HOME_PATH }\">Yeelight API</a>\r\n\r\n    <a [routerLink]=\"['/' + Constants.JIOC_HOME_PATH]\" class=\"btn\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.JIOC_HOME_PATH, 'btn-primary': router.url !== '/' + Constants.JIOC_HOME_PATH }\">JioC</a>\r\n\r\n    <a [routerLink]=\"['/' + Constants.ABOUT_PATH]\" class=\"btn btn-outline-primary\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.ABOUT_PATH, 'btn-primary': router.url !== '/' + Constants.ABOUT_PATH }\">About</a>\r\n\r\n</nav>"
+module.exports = "<nav class=\"navbar navbar-dark bg-dark navbar-expand-lg\">\r\n    <a class=\"navbar-brand\" routerLink=\"/\">\r\n        <img id=\"profile-picture\"\r\n            (mouseenter)=\"mouseAction(true)\" (mouseleave)=\"mouseAction(false)\"\r\n            [ngClass]=\"{'big': _in}\"\r\n            src=\"/assets/profilepicture.jpg\"> Romain ODDONE</a>\r\n\r\n    <div class=\"flex-spacer\"></div>\r\n\r\n    <a [routerLink]=\"['/' + Constants.YEELIGHTAPI_HOME_PATH]\" class=\"btn\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.YEELIGHTAPI_HOME_PATH, 'btn-primary': router.url !== '/' + Constants.YEELIGHTAPI_HOME_PATH }\">Yeelight API</a>\r\n\r\n    <!-- <a [routerLink]=\"['/' + Constants.JIOC_HOME_PATH]\" class=\"btn\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.JIOC_HOME_PATH, 'btn-primary': router.url !== '/' + Constants.JIOC_HOME_PATH }\">JioC</a> -->\r\n\r\n    <a [routerLink]=\"['/' + Constants.ABOUT_PATH]\" class=\"btn btn-outline-primary\" [ngClass]=\"{'btn-outline-primary': router.url === '/' + Constants.ABOUT_PATH, 'btn-primary': router.url !== '/' + Constants.ABOUT_PATH }\">About</a>\r\n\r\n</nav>"
 
 /***/ }),
 
