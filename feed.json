@@ -1,0 +1,34 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "roddone.github.io",
+    "description": "",
+    "home_page_url": "https://roddone.github.io",
+    "feed_url": "https://roddone.github.io/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Romain ODDONE"
+    },
+    "items": [
+        {
+            "id": "https://roddone.github.io/controler-ses-ampoules-yeelight-en-c.html",
+            "url": "https://roddone.github.io/controler-ses-ampoules-yeelight-en-c.html",
+            "title": "Contrôler ses ampoules Yeelight en C#",
+            "summary": "Yeelight est la solution de luminaires connectés de Xiaomi. Contrairement aux périphériques Phillips Hue, celles-ci sont directement connectées en Wi-fi et ne nécessitent pas de pont pour les connecter. Ce système a ses avantages et inconvénients mais permet de débuter dans le monde des objets connectés&hellip;",
+            "content_html": "<p>Yeelight est la solution de luminaires connectés de Xiaomi. Contrairement aux périphériques Phillips Hue, celles-ci sont directement connectées en Wi-fi et ne nécessitent pas de pont pour les connecter. </p>\n<p>Ce système a ses avantages et inconvénients mais permet de débuter dans le monde des objets connectés à faible coût (compter environ 20€ pour une ampoule couleur).</p>\n<p>Ce qui nous intéresse ici est surtout de les contrôler via une API, c'est ce que je me suis efforcé de faire dans <a href=\"http://github.com/roddone/YeelightAPI\" title=\"Lien vers le github de YeelightAPI\" target=\"_blank\" rel=\"noopener noreferrer\">YeelightAPI</a>. Dans sa grande bonté, Yeelight met à disposition des développeurs une <a href=\"https://www.yeelight.com/download/Yeelight_Inter-Operation_Spec.pdf\" title=\"Lien vers la documentation officielle Yeelight\" target=\"_blank\" rel=\"noopener noreferrer\">documentation </a>technique expliquant leur protocole et les différentes méthodes disponibles. Les deux principales fonctionnalités étant la découverte de périphériques et leur contrôle, j'ai pu les implémenter grâce à cette documentation.</p>\n<p>La découverte des périphériques se base sur le protocole SSDP (UDP) et permet non seulement de récupérer les périphériques sur le réseau (modèle, hostname, version de firmware) mais également leurs capacités (changement de couleur, luminosité, température etc.).</p>\n<p>Le contrôle se fait par des requêtes TCP dont la requête au format JSON contient le nom de la méthode à appeler ainsi que les différents paramètres. On peut ainsi allumer/éteindre, changer la couleur/luminosité/température, démarrer des scènes etc. Les appels sont ensuite automatiquement suivis d'une réponse du device (toujours en JSON) indiquant simplement \"ok\" en cas de succès, ou un code + message d'erreur si la requête a échoué.</p>\n<p>Autre chose assez pratique pour suivre l'état d'un Device : dès qu'une action est faîte sur un device, celui-ci envoi une notification indiquant la propriété ayant changé ainsi que sa nouvelle valeur.</p>\n<p>Pour simplifier tout cela, j'ai conçu <a href=\"http://github.com/roddone/YeelightAPI\" title=\"Lien vers le github de YeelightAPI\">YeelightAPI</a> comme un wrapper autour des différentes méthodes afin de simplifier leur appel.</p>\n<p>Pour cela rien deplus simple, la classe <code>DeviceLocator</code> permet de lancer une recherche des périphériques sur le réseau. Ces périphériques sont des objets de type <code>Device</code> et possèdent toutes les méthodes possibles. Un objet <code>DeviceGroup</code> permet de contrôler plusieurs Devices en même temps. Pour finir, toute l'API est basée sur le système d'async/await de C#. La documentation complète se trouve sur <a href=\"http://github.com/roddone/YeelightAPI\" title=\"Lien vers le github de YeelightAPI\">github</a>.</p>",
+            "image": "https://roddone.github.io/media/posts/1/ifttt2.png",
+            "author": {
+                "name": "Romain ODDONE"
+            },
+            "tags": [
+                   "yeelight",
+                   "xiaomi",
+                   "iot",
+                   "c#",
+                   "bulb",
+                   ".net"
+            ],
+            "date_published": "2018-10-08T11:25:13+02:00",
+            "date_modified": "2018-10-09T09:04:28+02:00"
+        }
+    ]
+}
