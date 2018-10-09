@@ -3,7 +3,7 @@
     <title>roddone.github.io</title>
     <link href="https://roddone.github.io/feed.xml" rel="self" />
     <link href="https://roddone.github.io" />
-    <updated>2018-10-09T10:36:52+02:00</updated>
+    <updated>2018-10-09T14:19:31+02:00</updated>
     <author>
         <name>Romain ODDONE</name>
     </author>
@@ -14,8 +14,8 @@
         <author>
             <name>Romain ODDONE</name>
         </author>
-        <link href="https://roddone.github.io/controler-ses-ampoules-yeelight-en-c.html"/>
-        <id>https://roddone.github.io/controler-ses-ampoules-yeelight-en-c.html</id>
+        <link href="https://roddone.github.io/controler-ses-ampoules-yeelight-en-c/"/>
+        <id>https://roddone.github.io/controler-ses-ampoules-yeelight-en-c/</id>
             <category term="yeelight"/>
             <category term="xiaomi"/>
             <category term="iot"/>
