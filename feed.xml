@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Romain ODDONE</title>
-    <link href="https://roddone.github.io/feed.xml" rel="self" />
-    <link href="https://roddone.github.io" />
-    <updated>2019-05-03T15:42:30+02:00</updated>
+    <link href="https://blog.roddone.ovh/feed.xml" rel="self" />
+    <link href="https://blog.roddone.ovh" />
+    <updated>2019-05-03T15:45:45+02:00</updated>
     <author>
         <name>Romain ODDONE</name>
     </author>
-    <id>https://roddone.github.io</id>
+    <id>https://blog.roddone.ovh</id>
 
     <entry>
         <title>Skill Alexa &quot;Mon Planning Séries&quot;</title>
         <author>
             <name>Romain ODDONE</name>
         </author>
-        <link href="https://roddone.github.io/skill-alexa-mon-planning-series/"/>
-        <id>https://roddone.github.io/skill-alexa-mon-planning-series/</id>
+        <link href="https://blog.roddone.ovh/skill-alexa-mon-planning-series/"/>
+        <id>https://blog.roddone.ovh/skill-alexa-mon-planning-series/</id>
 
         <updated>2019-05-03T15:04:42+02:00</updated>
             <summary>
@@ -38,19 +38,19 @@
         <author>
             <name>Romain ODDONE</name>
         </author>
-        <link href="https://roddone.github.io/societe-dunkerquoise-dhistoire-et-darcheologie/"/>
-        <id>https://roddone.github.io/societe-dunkerquoise-dhistoire-et-darcheologie/</id>
+        <link href="https://blog.roddone.ovh/societe-dunkerquoise-dhistoire-et-darcheologie/"/>
+        <id>https://blog.roddone.ovh/societe-dunkerquoise-dhistoire-et-darcheologie/</id>
 
         <updated>2019-05-02T14:32:33+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://roddone.github.io/media/posts/5/cropped-DK15831.png" alt="" />
+                        <img src="https://blog.roddone.ovh/media/posts/5/cropped-DK15831.png" alt="" />
                     Le site internet de la Société Dunkerquoise d'Histoire et d'Archéologie ayant besoin d'un coup de jeune, l'association m'a solicité pour le remettre au gout du jour. https://sdha.fr
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://roddone.github.io/media/posts/5/cropped-DK15831.png" alt="" />
+                    <img src="https://blog.roddone.ovh/media/posts/5/cropped-DK15831.png" alt="" />
                 <p>Le site internet de la Société Dunkerquoise d'Histoire et d'Archéologie ayant besoin d'un coup de jeune, l'association m'a solicité pour le remettre au gout du jour.</p>
 <p><a href="https://sdha.fr" target="_blank" rel="noopener noreferrer" title="site internet de la Société Dunkerquoise d'Histoire et d'Archéologie">https://sdha.fr</a></p>
             ]]>
@@ -61,19 +61,19 @@
         <author>
             <name>Romain ODDONE</name>
         </author>
-        <link href="https://roddone.github.io/gerer-ses-chargements-avec-angular-js-1x/"/>
-        <id>https://roddone.github.io/gerer-ses-chargements-avec-angular-js-1x/</id>
+        <link href="https://blog.roddone.ovh/gerer-ses-chargements-avec-angular-js-1x/"/>
+        <id>https://blog.roddone.ovh/gerer-ses-chargements-avec-angular-js-1x/</id>
 
         <updated>2019-05-02T14:40:31+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://roddone.github.io/media/posts/4/800px-AngularJS_logo.svg1.png" alt="" />
+                        <img src="https://blog.roddone.ovh/media/posts/4/800px-AngularJS_logo.svg1.png" alt="" />
                     Quand on fait du développement web, il arrive forcément un moment où les temps de réponse de web-services peuvent gacher l'affichage d'une page. Pour éviter cela on a la solution de mettre un bon vieux loader à l'endroit où nos données ne sont pas encore&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://roddone.github.io/media/posts/4/800px-AngularJS_logo.svg1.png" alt="" />
+                    <img src="https://blog.roddone.ovh/media/posts/4/800px-AngularJS_logo.svg1.png" alt="" />
                 <p>Quand on fait du développement web, il arrive forcément un moment où les temps de réponse de web-services peuvent gacher l'affichage d'une page. Pour éviter cela on a la solution de mettre un bon vieux loader à l'endroit où nos données ne sont pas encore affichées.</p>
 <p>En angular c'est simple, on n'a qu'à utiliser un booléen dans le scope de son controller, et en fonction de sa valeur afficher le contenu ou le template "chargement en cours ...".<br>L'inconvénient est que sur une page cela peut donner lieu à une multitude de variables différentes dans la partie JavaScript, et donc de &lt;div ng-if &gt; dans le html et ainsi vite devenir illisible. Comme dans 90% des cas on doit afficher un loader lors d'une requête Ajax, pourquoi ne pas utiliser directement la Promise Angular à la place d'un booléen ? On peut ainsi facilement créer un composant angular qui prend en paramètre la promesse et affichera le loader tant que la promesse n'a pas été résolue. On peut aller encore plus loin et afficher un autre message si la promesse a renvoyé une erreur !</p>
 <p>exemple : </p>
@@ -94,19 +94,19 @@
         <author>
             <name>Romain ODDONE</name>
         </author>
-        <link href="https://roddone.github.io/acceder-a-son-planning-de-serie-vore-avec-betaseriesnet/"/>
-        <id>https://roddone.github.io/acceder-a-son-planning-de-serie-vore-avec-betaseriesnet/</id>
+        <link href="https://blog.roddone.ovh/acceder-a-son-planning-de-serie-vore-avec-betaseriesnet/"/>
+        <id>https://blog.roddone.ovh/acceder-a-son-planning-de-serie-vore-avec-betaseriesnet/</id>
 
         <updated>2018-10-09T15:31:09+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://roddone.github.io/media/posts/3/betaseries_1980.png" alt="" />
+                        <img src="https://blog.roddone.ovh/media/posts/3/betaseries_1980.png" alt="" />
                     Betaseries est un service en ligne permettant de suivre ses séries préférées et d'être prévenu dès qu'une nouvelle saison ou un nouvel épisode est sorti. Comme tout bon service qui se respecte, il met à disposition une API REST qui permet de faire tout ce que&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://roddone.github.io/media/posts/3/betaseries_1980.png" alt="" />
+                    <img src="https://blog.roddone.ovh/media/posts/3/betaseries_1980.png" alt="" />
                 <p><a href="https://www.betaseries.com/" target="_blank" rel="noopener noreferrer">Betaseries </a>est un service en ligne permettant de suivre ses séries préférées et d'être prévenu dès qu'une nouvelle saison ou un nouvel épisode est sorti.</p>
 <p>Comme tout bon service qui se respecte, il met à disposition une <a href="https://www.betaseries.com/api/" target="_blank" rel="noopener noreferrer">API REST</a> qui permet de faire tout ce que fait le site officiel. Il existe des applications pour à peu près toutes les plateformes mais je n'ai pas trouvé de librairie permettant d'utiliser cette API en C# dans mes applications.</p>
 <p>J'ai donc décidé de commencer cette implémentation mais j'ai vite déchanté en voyant la quantité d'entités REST à implémenter. En effet j'avais juste besoin de récupérer mon planning, mais je n'avais pas le temps d'implémenter une API aussi conséquente. Comme je n'avais pas non plus envie de livrer une API incomplète, j'ai donc cherché un moyen pour tout implémenter de façon générique afin que l'API soit entièrement utilisable, quitte à repasser sur les entités par la suite pour implémenter leur description.</p>
@@ -122,19 +122,19 @@
         <author>
             <name>Romain ODDONE</name>
         </author>
-        <link href="https://roddone.github.io/controler-ses-ampoules-yeelight-en-c/"/>
-        <id>https://roddone.github.io/controler-ses-ampoules-yeelight-en-c/</id>
+        <link href="https://blog.roddone.ovh/controler-ses-ampoules-yeelight-en-c/"/>
+        <id>https://blog.roddone.ovh/controler-ses-ampoules-yeelight-en-c/</id>
 
         <updated>2018-10-09T14:21:36+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://roddone.github.io/media/posts/1/ifttt2.png" alt="" />
+                        <img src="https://blog.roddone.ovh/media/posts/1/ifttt2.png" alt="" />
                     Yeelight est la solution de luminaires connectés de Xiaomi. Contrairement aux périphériques Phillips Hue, celles-ci sont directement connectées en Wi-fi et ne nécessitent pas de pont pour les connecter. Ce système a ses avantages et inconvénients mais permet de débuter dans le monde des objets connectés&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://roddone.github.io/media/posts/1/ifttt2.png" alt="" />
+                    <img src="https://blog.roddone.ovh/media/posts/1/ifttt2.png" alt="" />
                 <p>Yeelight est la solution de luminaires connectés de Xiaomi. Contrairement aux périphériques Phillips Hue, celles-ci sont directement connectées en Wi-fi et ne nécessitent pas de pont pour les connecter. </p>
 <p>Ce système a ses avantages et inconvénients mais permet de débuter dans le monde des objets connectés à faible coût (compter environ 20€ pour une ampoule couleur).</p>
 <p>Ce qui nous intéresse ici est surtout de les contrôler via une API, c'est ce que je me suis efforcé de faire dans <a href="http://github.com/roddone/YeelightAPI" title="Lien vers le github de YeelightAPI" target="_blank" rel="noopener noreferrer">YeelightAPI</a>. Dans sa grande bonté, Yeelight met à disposition des développeurs une <a href="https://www.yeelight.com/download/Yeelight_Inter-Operation_Spec.pdf" title="Lien vers la documentation officielle Yeelight" target="_blank" rel="noopener noreferrer">documentation </a>technique expliquant leur protocole et les différentes méthodes disponibles. Les deux principales fonctionnalités étant la découverte de périphériques et leur contrôle, j'ai pu les implémenter grâce à cette documentation.</p>
