@@ -1,0 +1,161 @@
+{
+	"head": {
+		"title": "Romain ODDONE - CV",
+		"metaDescription": "Romain ODDONE - CV"
+	},
+	"navbar": {
+		"about": "A propos",
+		"experience": "Expérience",
+		"education": "Formation",
+		"skills": "Skills",
+		"interests": "Intérêts",
+		"diy": "Réalisations"
+	},
+	"about": {
+		"description": "Développeur FullStack curieux et force de proposition, je me suis spécialisé dans les technologies Microsoft et le développement Front-End sur diverses technologies et Frameworks.</br>J'ai également eu l'occasion de développer des expériences dans le développement mobile et l'IoT, deux domaines que j'aimerai approfondir."
+	},
+	"experience": [
+		{
+			"title": "Technical Leader",
+			"company": "Publicis-ETO",
+			"descriptionParts": [
+				"Travail sous la direction de l'Architecte Technique dans la mise en place des différentes architectures applicatives et dans la réalisation de socles techniques.</br> Formation et accompagnement des développeurs au travers de formations, pair programming et de code.</br> Recherche et développement Back/Front/Cloud</br> Partie technique des entretiens d'embauche."
+			],
+			"tags": [
+				".Net Framework 4.7",
+				".Net Core",
+				"TypeScript",
+				"JavaScript",
+				"Angular.Js 1.7",
+				"Angular 7",
+				"SASS",
+				"Docker",
+				"TFS",
+				"Git",
+				"Azure DevOps"
+			],
+			"timing": "Depuis Septembre 2017"
+		},
+		{
+			"title": "Développeur FullStack",
+			"company": "Publicis-ETO",
+			"descriptionParts": [
+				"Développement et maintenance des boutiques en ligne d'Orange (<a href=\"https://boutique.orange.fr\">https://boutique.orange.fr</a> et <a href=\"https://shop.sosh.fr\">https://shop.sosh.fr</a>)",
+				"Référent Front-End, création d'une équipe spécialisée afin de garantir la qualité du Front des boutiques Orange."
+			],
+			"timing": "Mars 2016 - Septembre 2017",
+			"tags": [
+				".Net Framework 4.7",
+				"JavaScript",
+				"Angular.Js 1.x",
+				"JQuery",
+				"SQL Server",
+				"TFS"
+			]
+		},
+		{
+			"title": "Développeur",
+			"company": "Archimed",
+			"descriptionParts": [
+				"Développement et maintenance d'applications mobiles (iOS) et Windows",
+				"Migration en 64 bits d'une solution de sécurisation de postes informatiques",
+				"Participation au développement de plusieurs applications Web (Elise, Syracuse)",
+				"Méthode SCRUM et travail collaboratif sous TFS avec des équipes distantes (Grenoble, Tunisie)"
+			],
+			"timing": "Aout 2011 - Mars 2016",
+			"tags": [
+				".Net Framework",
+				"JavaScript",
+				"SQL Server",
+				"Mac OS"
+			]
+		},
+		{
+			"title": "Développeur stagiaire",
+			"company": "Archimed",
+			"descriptionParts": [
+				"Développement d'applications mobiles (iOS)"
+			],
+			"timing": "Avril 2011 - Aout 2011",
+			"tags": []
+		}
+	],
+	"education": [
+		{
+			"location": "IUT A - Lille",
+			"label": "Licence professionnelle SIL - DA2I",
+			"description": "Systèmes Informatiques et Logiciels, Développement et Administration Internet et Intranet",
+			"timing": "2010 - 2011"
+		},
+		{
+			"location": "Lycée de l'Europe - Dunkerque",
+			"label": "BTS IRIS",
+			"description": "Informatique et Réseaux pour les Industries et Services",
+			"timing": "2008 - 2010"
+		},
+		{
+			"location": "Lycée E.P.I.D - Dunkerque",
+			"label": "BAC S",
+			"description": "Sciences de l'ingénieur",
+			"timing": "2006 - 2008"
+		}
+	],
+	"interests": [
+		"En plus d'être développeur, j'aime voyager et découvrir de nouveaux pays. </br> Je suis aussi fan de Science-Fiction et je passe beaucoup de temps à lire ou regarder des films/séries de ce genre.",
+		"Ne souhaitant pas me contenter de mes compétences actuelles, je passe également beaucoup de temps à faire de la veille technologique et à me renseigner sur les dernières technologies et avancées scientifiques (informatique, physique, astronomie, etc.)"
+	],
+	"diy": [
+		{
+			"url": "https://github.com/roddone/YeelightAPI",
+			"title": "Yeelight API",
+			"description": "Librairie permettant de contrôler à distance les ampoules connectées Xiaomi Yeelight",
+			"tags": [
+				".Net",
+				"IoT"
+			]
+		},
+		{
+			"url": "https://www.amazon.fr/Romain-ODDONE-Mon-planning-s%C3%A9ries/dp/B07N8WH5M9",
+			"title": "Skill Alexa \"Mon Planning Séries\"",
+			"description": "Skill Alexa permettant de récupérer son planning de sorties séries via BetaSeries",
+			"tags": [
+				"Node.Js",
+				"Alexa",
+				"TypeScript",
+				"AWS"
+			]
+		},
+		{
+			"url": "https://github.com/roddone/BetaSeries.Net",
+			"title": "BetaSeries.Net",
+			"description": "Librairie wrapper autour de l'API REST BetaSeries",
+			"tags": [
+				".Net"
+			]
+		},
+		{
+			"url": "https://github.com/roddone/BraviaIRCCControl",
+			"title": "BraviaIRCCControl",
+			"description": "Librairie permettant de contrôler à distance les TVs Sony Bravia via IRCC",
+			"tags": [
+				".Net",
+				"IoT"
+			]
+		},
+		{
+			"url": "https://github.com/myconstellation/constellation-packages",
+			"title": "Packages Constellation",
+			"description": "Création et correction de Packages Constellation, la plateforme d'interconnexion des programmes et objets connectés",
+			"tags": [
+				".Net",
+				"IoT"
+			]
+		},
+		{
+			"url": "https://sdha.fr",
+			"title": "SDHA",
+			"description": "Site Internet de la Société Dunkerquoise d'Histoire et d'Archéologie",
+			"tags": ["Wordpress"]
+		}
+	]
+}
