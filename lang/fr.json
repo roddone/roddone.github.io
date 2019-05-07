@@ -9,7 +9,9 @@
 		"education": "Formation",
 		"skills": "Skills",
 		"interests": "Intérêts",
-		"diy": "Réalisations"
+		"diy": "Réalisations",
+		"otherLinkUrl":"/english.html",
+		"otherLinkText":"english ?"
 	},
 	"about": {
 		"description": "Développeur FullStack curieux et force de proposition, je me suis spécialisé dans les technologies Microsoft et le développement Front-End sur diverses technologies et Frameworks.</br>J'ai également eu l'occasion de développer des expériences dans le développement mobile et l'IoT, deux domaines que j'aimerai approfondir."
@@ -19,7 +21,10 @@
 			"title": "Technical Leader",
 			"company": "Publicis-ETO",
 			"descriptionParts": [
-				"Travail sous la direction de l'Architecte Technique dans la mise en place des différentes architectures applicatives et dans la réalisation de socles techniques.</br> Formation et accompagnement des développeurs au travers de formations, pair programming et de code.</br> Recherche et développement Back/Front/Cloud</br> Partie technique des entretiens d'embauche."
+				"Travail sous la direction de l'Architecte Technique dans la mise en place des différentes architectures applicatives et dans la réalisation de socles techniques.",
+				"Formation et accompagnement des développeurs au travers de formations, pair programming et de code reviews.",
+				"Recherche et développement Back/Front/Cloud",
+				"Partie technique des entretiens d'embauche."
 			],
 			"tags": [
 				".Net Framework 4.7",
@@ -155,39 +160,64 @@
 			"url": "https://sdha.fr",
 			"title": "SDHA",
 			"description": "Site Internet de la Société Dunkerquoise d'Histoire et d'Archéologie",
-			"tags": ["Wordpress"]
+			"tags": [
+				"Wordpress"
+			]
 		}
 	],
-	"skills":{
+	"skills": {
 		"languagesAndTools": {
 			"title": "Langages &amp; Outils",
-			"items":[{
-				"icon": "fab fa-windows", "title":"Windows"
-			},{
-				"icon": "fab fa-linux", "title":"Linux"
-			},{
-				"icon": "fab fa-html5", "title":"HTML 5"
-			},{
-				"icon": "fab fa-css3-alt", "title":"CSS 3"
-			},{
-				"icon": "fab fa-js-square", "title":"TypeScript & JavaScript"
-			},{
-				"icon": "fab fa-angular", "title":"Angular"
-			},{
-				"icon": "fab fa-node-js", "title":"Node.Js"
-			},{
-				"icon": "fab fa-sass", "title":"SASS"
-			},{
-				"icon": "fab fa-wordpress", "title":"Wordpress"
-			},{
-				"icon": "fab fa-npm", "title":"npm"
-			},{
-				"icon": "fab fa-raspberry-pi", "title":"Rasperry Pi"
-			}]
+			"items": [
+				{
+					"icon": "fab fa-windows",
+					"title": "Windows"
+				},
+				{
+					"icon": "fab fa-linux",
+					"title": "Linux"
+				},
+				{
+					"icon": "fab fa-html5",
+					"title": "HTML 5"
+				},
+				{
+					"icon": "fab fa-css3-alt",
+					"title": "CSS 3"
+				},
+				{
+					"icon": "fab fa-js-square",
+					"title": "TypeScript & JavaScript"
+				},
+				{
+					"icon": "fab fa-angular",
+					"title": "Angular"
+				},
+				{
+					"icon": "fab fa-node-js",
+					"title": "Node.Js"
+				},
+				{
+					"icon": "fab fa-sass",
+					"title": "SASS"
+				},
+				{
+					"icon": "fab fa-wordpress",
+					"title": "Wordpress"
+				},
+				{
+					"icon": "fab fa-npm",
+					"title": "npm"
+				},
+				{
+					"icon": "fab fa-raspberry-pi",
+					"title": "Rasperry Pi"
+				}
+			]
 		},
-		"concepts":{
-			"title":"Concepts",
-			"items":[
+		"concepts": {
+			"title": "Concepts",
+			"items": [
 				"Mobile-First &amp; Responsive Design",
 				"Progressive Web App &amp; Single Page Applications",
 				"Feature Teams",
