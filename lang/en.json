@@ -1,9 +1,228 @@
 {
-	"about":"A propos",
-	"experience":"Expérience",
-	"education":"Formation",
-	"skills":"Skills",
-	"interests":"Intérêts",
-	"diy": "Réalisations"
-
+	"head": {
+		"title": "Romain ODDONE - Resume",
+		"metaDescription": "Romain ODDONE - Resume"
+	},
+	"navbar": {
+		"about": "About",
+		"experience": "Experience",
+		"education": "Education",
+		"skills": "Skills",
+		"interests": "Interests",
+		"diy": "DIY",
+		"otherLinkUrl":"/",
+		"otherLinkText":"French ?"
+	},
+	"about": {
+		"description": "As a curious FullStack developer and strength of proposal, I specialized in Microsoft technologies and Front-End development on various technologies and Frameworks.</br> I also had the opportunity to develop experiences in mobile development and IoT development, two experiences that I would like to deepen."
+	},
+	"experience": [
+		{
+			"title": "Technical Leader",
+			"company": "Publicis-ETO",
+			"descriptionParts": [
+				"Work under the direction of the Technical Architect to build software architectures and technical bases",
+				"Training and support for developers through training, pair programming and code reviews",
+				"Research and development Back/Front/Cloud",
+				"Technical part during job interviews"
+			],
+			"tags": [
+				".Net Framework 4.7",
+				".Net Core",
+				"TypeScript",
+				"JavaScript",
+				"Angular.Js 1.7",
+				"Angular 7",
+				"SASS",
+				"Docker",
+				"TFS",
+				"Git",
+				"Azure DevOps"
+			],
+			"timing": "Since September 2017"
+		},
+		{
+			"title": "FullStack Developer",
+			"company": "Publicis-ETO",
+			"descriptionParts": [
+				"Development and maintenance of Orange's online shops (<a href=\"https://boutique.orange.fr\">https://boutique.orange.fr</a> and <a href=\"https://shop.sosh.fr\">https://shop.sosh.fr</a>)",
+				"Front-End Referent, creation of a specialized team to guarantee Orange Shops Front-End quality"
+			],
+			"timing": "March 2016 - September 2017",
+			"tags": [
+				".Net Framework 4.7",
+				"JavaScript",
+				"Angular.Js 1.x",
+				"JQuery",
+				"SQL Server",
+				"TFS"
+			]
+		},
+		{
+			"title": "Junior Developer",
+			"company": "Archimed",
+			"descriptionParts": [
+				"Development and maintenance of iOS and windows applications",
+				"Migration of a complete software solution into 64 bits",
+				"Development of several web applications (Elise, Syracuse)",
+				"SCRUM method and collaborative work under TFS with remote teams (Grenoble, Tunisia)"
+			],
+			"timing": "August 2011 - March 2016",
+			"tags": [
+				".Net Framework",
+				"JavaScript",
+				"SQL Server",
+				"Mac OS"
+			]
+		},
+		{
+			"title": "Development trainee",
+			"company": "Archimed",
+			"descriptionParts": [
+				"iOS applications development"
+			],
+			"timing": "April 2011 - August 2011",
+			"tags": []
+		}
+	],
+	"education": [
+		{
+			"location": "IUT A - Lille",
+			"label": "Licence professionnelle SIL - DA2I",
+			"description": "Software, Internet and Intranet development",
+			"timing": "2010 - 2011"
+		},
+		{
+			"location": "Lycée de l'Europe - Dunkerque",
+			"label": "BTS IRIS",
+			"description": "Network and Development",
+			"timing": "2008 - 2010"
+		},
+		{
+			"location": "Lycée E.P.I.D - Dunkerque",
+			"label": "BAC S",
+			"description": "Engineer sciences",
+			"timing": "2006 - 2008"
+		}
+	],
+	"interests": [
+		"Apart from beeing developer, I like to travel and discover new countries. </br> J'm also fan of science fiction and I spend a lot of time reading or binge watching films and tv-shows of this kind.",
+		"I don't want to settle for my actual skills, so I also spend time doing technology watch and inquiring about latest technologies and science breakthroughs (computer sciences, physics, astronomy)"
+	],
+	"diy": [
+		{
+			"url": "https://github.com/roddone/YeelightAPI",
+			"title": "Yeelight API",
+			"description": "Library to remotely control Xiaomi Yeelight smart bulbs",
+			"tags": [
+				".Net",
+				"IoT"
+			]
+		},
+		{
+			"url": "https://www.amazon.fr/Romain-ODDONE-Mon-planning-s%C3%A9ries/dp/B07N8WH5M9",
+			"title": "Skill Alexa \"Mon Planning Séries\"",
+			"description": "Skill Alexa to fetch tv-shows calendar from BetaSeries",
+			"tags": [
+				"Node.Js",
+				"Alexa",
+				"TypeScript",
+				"AWS"
+			]
+		},
+		{
+			"url": "https://github.com/roddone/BetaSeries.Net",
+			"title": "BetaSeries.Net",
+			"description": "Wrapper library to use BetaSeries REST API",
+			"tags": [
+				".Net"
+			]
+		},
+		{
+			"url": "https://github.com/roddone/BraviaIRCCControl",
+			"title": "BraviaIRCCControl",
+			"description": "Library to remotely control Sony Bravia devices through IRCC",
+			"tags": [
+				".Net",
+				"IoT"
+			]
+		},
+		{
+			"url": "https://github.com/myconstellation/constellation-packages",
+			"title": "Packages Constellation",
+			"description": "Creation and maintenance of Constellation packages, the platform to orchestrate and interconnect your programs and devices",
+			"tags": [
+				".Net",
+				"IoT"
+			]
+		},
+		{
+			"url": "https://sdha.fr",
+			"title": "SDHA",
+			"description": "Website of Société Dunkerquoise d'Histoire et d'Archéologie",
+			"tags": [
+				"Wordpress"
+			]
+		}
+	],
+	"skills": {
+		"languagesAndTools": {
+			"title": "Languages &amp; Tools",
+			"items": [
+				{
+					"icon": "fab fa-windows",
+					"title": "Windows"
+				},
+				{
+					"icon": "fab fa-linux",
+					"title": "Linux"
+				},
+				{
+					"icon": "fab fa-html5",
+					"title": "HTML 5"
+				},
+				{
+					"icon": "fab fa-css3-alt",
+					"title": "CSS 3"
+				},
+				{
+					"icon": "fab fa-js-square",
+					"title": "TypeScript & JavaScript"
+				},
+				{
+					"icon": "fab fa-angular",
+					"title": "Angular"
+				},
+				{
+					"icon": "fab fa-node-js",
+					"title": "Node.Js"
+				},
+				{
+					"icon": "fab fa-sass",
+					"title": "SASS"
+				},
+				{
+					"icon": "fab fa-wordpress",
+					"title": "Wordpress"
+				},
+				{
+					"icon": "fab fa-npm",
+					"title": "npm"
+				},
+				{
+					"icon": "fab fa-raspberry-pi",
+					"title": "Rasperry Pi"
+				}
+			]
+		},
+		"concepts": {
+			"title": "Concepts",
+			"items": [
+				"Mobile-First &amp; Responsive Design",
+				"Progressive Web App &amp; Single Page Applications",
+				"Feature Teams",
+				"Agile Development &amp; Scrum"
+			]
+		}
+	}
 }
