@@ -159,21 +159,13 @@
 
 				<div class="subheading mb-3">{{{skills.concepts.title}}}</div>
 				<ul class="fa-ul mb-0">
+					{{#skills.concepts.items}}
 					<li>
 						<i class="fa-li fa fa-check"></i>
-						Mobile-First &amp; Responsive Design</li>
+						{{{this}}}
+						</li>
 					<li>
-						<i class="fa-li fa fa-check"></i>
-						Progressive Web App &amp; Single Page Applications</li>
-					<!-- <li>
-						<i class="fa-li fa fa-check"></i>
-						Cross Browser Testing &amp; Debugging</li> -->
-					<li>
-						<i class="fa-li fa fa-check"></i>
-						Feature Teams</li>
-					<li>
-						<i class="fa-li fa fa-check"></i>
-						Agile Development &amp; Scrum</li>
+					{{/skills.concepts.items}}
 				</ul>
 			</div>
 		</section>

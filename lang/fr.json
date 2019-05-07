@@ -186,7 +186,13 @@
 			}]
 		},
 		"concepts":{
-
+			"title":"Concepts",
+			"items":[
+				"Mobile-First &amp; Responsive Design",
+				"Progressive Web App &amp; Single Page Applications",
+				"Feature Teams",
+				"Agile Development &amp; Scrum"
+			]
 		}
 	}
 }
