@@ -175,6 +175,12 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
+#cookies {
+  position: fixed;
+  bottom: 0px;
+  max-width: 75rem;
+}
+
 .bg-primary {
   background-color: #17a2b8 !important;
 }
