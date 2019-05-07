@@ -163,6 +163,14 @@
 			"tags": [
 				"Wordpress"
 			]
+		},
+		{
+			"url": "/",
+			"title": "Mon CV",
+			"description": "Mon Curriculum Vitae",
+			"tags": [
+				"Handlebars", "Bootstrap", "github.io", "Azure DevOps", "JavaScript", "SASS", "gulp", "Node.Js"
+			]
 		}
 	],
 	"skills": {

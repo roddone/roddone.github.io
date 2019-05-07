@@ -106,7 +106,7 @@
 		}
 	],
 	"interests": [
-		"Apart from beeing developer, I like to travel and discover new countries. </br> J'm also fan of science fiction and I spend a lot of time reading or binge watching films and tv-shows of this kind.",
+		"Apart from beeing developer, I like to travel and discover new countries. </br> I'm also a big fan of science fiction and I spend a lot of time reading or binge watching films and tv-shows of this kind.",
 		"I don't want to settle for my actual skills, so I also spend time doing technology watch and inquiring about latest technologies and science breakthroughs (computer sciences, physics, astronomy)"
 	],
 	"diy": [
@@ -162,6 +162,14 @@
 			"description": "Website of Société Dunkerquoise d'Histoire et d'Archéologie",
 			"tags": [
 				"Wordpress"
+			]
+		},
+		{
+			"url": "/",
+			"title": "My resume",
+			"description": "My resume",
+			"tags": [
+				"Handlebars", "Bootstrap", "github.io", "Azure DevOps", "JavaScript", "SASS", "gulp", "Node.Js"
 			]
 		}
 	],
