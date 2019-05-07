@@ -3,6 +3,16 @@
 
 <head>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script src="https://www.googletagmanager.com/gtag/js?id=UA-139506649-1" async></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-139506649-1');
+	</script>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="{{head.metaDescription}}">
@@ -163,9 +173,9 @@
 					<li>
 						<i class="fa-li fa fa-check"></i>
 						{{{this}}}
-						</li>
+					</li>
 					<li>
-					{{/skills.concepts.items}}
+						{{/skills.concepts.items}}
 				</ul>
 			</div>
 		</section>
@@ -188,8 +198,7 @@
 				<h2 class="mb-5">{{navbar.diy}}</h2>
 				<div class="list-group">
 					{{#diy}}
-					<a href="{{url}}" target="_blank"
-						class="list-group-item list-group-item-action ">
+					<a href="{{url}}" target="_blank" class="list-group-item list-group-item-action ">
 						<div class="d-flex w-100 justify-content-between">
 							<h5 class="mb-1">{{title}}</h5>
 						</div>
