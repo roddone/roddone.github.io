@@ -157,5 +157,36 @@
 			"description": "Site Internet de la Société Dunkerquoise d'Histoire et d'Archéologie",
 			"tags": ["Wordpress"]
 		}
-	]
+	],
+	"skills":{
+		"languagesAndTools": {
+			"title": "Langages &amp; Outils",
+			"items":[{
+				"icon": "fab fa-windows", "title":"Windows"
+			},{
+				"icon": "fab fa-linux", "title":"Linux"
+			},{
+				"icon": "fab fa-html5", "title":"HTML 5"
+			},{
+				"icon": "fab fa-css3-alt", "title":"CSS 3"
+			},{
+				"icon": "fab fa-js-square", "title":"TypeScript & JavaScript"
+			},{
+				"icon": "fab fa-angular", "title":"Angular"
+			},{
+				"icon": "fab fa-node-js", "title":"Node.Js"
+			},{
+				"icon": "fab fa-sass", "title":"SASS"
+			},{
+				"icon": "fab fa-wordpress", "title":"Wordpress"
+			},{
+				"icon": "fab fa-npm", "title":"npm"
+			},{
+				"icon": "fab fa-raspberry-pi", "title":"Rasperry Pi"
+			}]
+		},
+		"concepts":{
+
+		}
+	}
 }
