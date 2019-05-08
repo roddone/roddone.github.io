@@ -106,7 +106,7 @@
 		}
 	],
 	"interests": [
-		"En plus d'être développeur, j'aime voyager et découvrir de nouveaux pays. </br> Je suis aussi fan de Science-Fiction et je passe beaucoup de temps à lire ou regarder des films/séries de ce genre.",
+		"En plus d'être développeur, j'aime voyager et découvrir de nouveaux pays. </br> Je suis aussi fan de Science-Fiction et je consacre beaucoup de temps à lire ou regarder des films/séries de ce genre.",
 		"Ne souhaitant pas me contenter de mes compétences actuelles, je passe également beaucoup de temps à faire de la veille technologique et à me renseigner sur les dernières technologies et avancées scientifiques (informatique, physique, astronomie, etc.)"
 	],
 	"diy": [
@@ -219,7 +219,7 @@
 				},
 				{
 					"icon": "fab fa-raspberry-pi",
-					"title": "Rasperry Pi"
+					"title": "Raspberry Pi"
 				}
 			]
 		},
