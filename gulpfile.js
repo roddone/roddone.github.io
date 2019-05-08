@@ -13,6 +13,7 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
+const concat = require("gulp-concat");
 const handlebars = require("gulp-compile-handlebars");
 
 // Load package.json for banner
@@ -109,7 +110,7 @@ function js() {
 		.pipe(rename({
 			suffix: '.min'
 		}))
-		.pipe(gulp.dest('./dist/js'))
+		.pipe(gulp.dest('./dist/js/'))
 		.pipe(browsersync.stream());
 }
 
@@ -136,6 +137,27 @@ function html() {
 
 }
 
+function bundle() {
+	var js = gulp
+		.src([
+			"./dist/vendor/jquery/jquery.min.js",
+			'./dist/vendor/bootstrap/js/bootstrap.bundle.min.js',
+			'./dist/vendor/jquery-easing/jquery.easing.min.js',
+			'./dist/js/resume.min.js'
+		])
+		.pipe(concat('bundle.js'))
+		.pipe(gulp.dest('./dist'));
+
+	var css = gulp
+		.src([
+			"./dist/vendor/bootstrap/css/bootstrap.min.css",
+			'./dist/css/resume.min.css'
+		])
+		.pipe(concat('bundle.css'))
+		.pipe(gulp.dest('./dist'));
+	return merge(js, css)
+}
+
 // Watch files
 function watchFiles() {
 	gulp.watch("./scss/**/*", css);
@@ -148,7 +170,7 @@ function watchFiles() {
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
-const build = gulp.series(vendor, gulp.parallel(html, img, css, js));
+const build = gulp.series(vendor, gulp.parallel(html, img, css, js), bundle);
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
 // Export tasks
