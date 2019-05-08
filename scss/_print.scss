@@ -1,0 +1,12 @@
+@media print{
+    
+    .badge-primary{
+        border:0;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+      
+    #page-top {
+        padding-left:0px !important;
+    }
+}

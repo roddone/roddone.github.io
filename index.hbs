@@ -33,7 +33,7 @@
 
 <body id="page-top">
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top d-print-none" id="sideNav">
 		<a class="text-white" href="{{navbar.otherLinkUrl}}">{{navbar.otherLinkText}}</a>
 		<a class="navbar-brand js-scroll-trigger" href="#page-top">
 			<span class="d-block d-lg-none">Romain Oddone</span>
@@ -74,24 +74,38 @@
 
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
 			<div class="w-100">
-				<h1 class="mb-0">Romain
+				<h1 class="mb-0">
+					<span class="d-none d-print-inline">
+						<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jfif"
+							alt="Romain ODDONE">
+					</span>
+					<span>Romain</span>
 					<span class="text-primary">Oddone</span>
 				</h1>
 				<div class="subheading mb-5">Lille, France
 					<a href="mailto:romain.oddone@outlook.com">romain.oddone@outlook.com</a>
 				</div>
+
 				<p class="lead mb-5">
 					{{{about.description}}}
 				</p>
 				<div class="social-icons">
-					<a href="https://www.linkedin.com/in/romain-oddone/" aria-label="Linkedin" title="Linkedin">
+					<a href="https://www.linkedin.com/in/romain-oddone/" class="d-print-block" aria-label="Linkedin"
+						title="Linkedin">
 						<i class="fab fa-linkedin-in"></i>
+						<span
+							class="d-none d-print-inline text-black-50 ml-4 position-absolute">https://www.linkedin.com/in/romain-oddone/</span>
 					</a>
-					<a href="https://github.com/roddone" aria-label="Github" title="Github">
+					<a href="https://github.com/roddone" class="d-print-block" aria-label="Github" title="Github">
 						<i class="fab fa-github"></i>
+						<span
+							class="d-none d-print-inline text-black-50 ml-4 position-absolute">https://github.com/roddone</span>
 					</a>
-					<a href="https://twitter.com/romainOddone" aria-label="Twitter" title="Twitter">
+					<a href="https://twitter.com/romainOddone" class="d-print-block" aria-label="Twitter"
+						title="Twitter">
 						<i class="fab fa-twitter"></i>
+						<span
+							class="d-none d-print-inline text-black-50 ml-4 position-absolute">https://twitter.com/romainOddone</span>
 					</a>
 				</div>
 			</div>
@@ -196,16 +210,21 @@
 				<h2 class="mb-5">{{navbar.diy}}</h2>
 				<div class="list-group">
 					{{#diy}}
-					<a href="{{url}}" target="_blank" rel="noreferrer" class="list-group-item list-group-item-action ">
+					<a href="{{url}}" target="_blank" rel="noreferrer"
+						class="text-decoration-none list-group-item list-group-item-action ">
 						<div class="d-flex w-100 justify-content-between">
 							<h5 class="mb-1">{{title}}</h5>
 						</div>
 						<p class="mb-1">{{description}}</p>
+						<p class="d-none d-print-block">
+							{{url}}
+						</p>
 						<p>
 							{{#tags}}
 							<span class="badge badge-primary">{{this}}</span>
 							{{/tags}}
 						</p>
+
 					</a>
 					{{/diy}}
 				</div>
@@ -214,7 +233,8 @@
 
 	</div>
 
-	<div id="cookies" class="alert alert-danger alert-dismissible fade show mb-0 w-100 p-3 m-3 d-none" role="alert">
+	<div id="cookies" class="alert alert-danger alert-dismissible fade show mb-0 w-100 p-3 m-3 d-none d-print-none"
+		role="alert">
 		<strong>Cookies Alert !</strong> Ce CV utilise des cookies (Google Analytics).
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			<span aria-hidden="true">&times;</span>

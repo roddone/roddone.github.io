@@ -127,7 +127,8 @@
 				"Node.Js",
 				"Alexa",
 				"TypeScript",
-				"AWS"
+				"AWS",
+				"Azure DevOps"
 			]
 		},
 		{
@@ -165,7 +166,7 @@
 			]
 		},
 		{
-			"url": "/",
+			"url": "https://cv.roddone.ovh",
 			"title": "My resume",
 			"description": "My resume",
 			"tags": [
