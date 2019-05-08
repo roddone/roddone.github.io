@@ -33,7 +33,7 @@
 
 <body id="page-top">
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top d-print-none" id="sideNav">
 		<a class="text-white" href="/">French ?</a>
 		<a class="navbar-brand js-scroll-trigger" href="#page-top">
 			<span class="d-block d-lg-none">Romain Oddone</span>
@@ -74,24 +74,38 @@
 
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
 			<div class="w-100">
-				<h1 class="mb-0">Romain
+				<h1 class="mb-0">
+					<span class="d-none d-print-inline">
+						<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jfif"
+							alt="Romain ODDONE">
+					</span>
+					<span>Romain</span>
 					<span class="text-primary">Oddone</span>
 				</h1>
 				<div class="subheading mb-5">Lille, France
 					<a href="mailto:romain.oddone@outlook.com">romain.oddone@outlook.com</a>
 				</div>
+
 				<p class="lead mb-5">
 					As a curious FullStack developer and strength of proposal, I specialized in Microsoft technologies and Front-End development on various technologies and Frameworks.</br> I also had the opportunity to develop experiences in mobile development and IoT development, two experiences that I would like to deepen.
 				</p>
 				<div class="social-icons">
-					<a href="https://www.linkedin.com/in/romain-oddone/" aria-label="Linkedin" title="Linkedin">
+					<a href="https://www.linkedin.com/in/romain-oddone/" class="d-print-block" aria-label="Linkedin"
+						title="Linkedin">
 						<i class="fab fa-linkedin-in"></i>
+						<span
+							class="d-none d-print-inline text-black-50 ml-4 position-absolute">https://www.linkedin.com/in/romain-oddone/</span>
 					</a>
-					<a href="https://github.com/roddone" aria-label="Github" title="Twitter">
+					<a href="https://github.com/roddone" class="d-print-block" aria-label="Github" title="Github">
 						<i class="fab fa-github"></i>
+						<span
+							class="d-none d-print-inline text-black-50 ml-4 position-absolute">https://github.com/roddone</span>
 					</a>
-					<a href="https://twitter.com/romainOddone" aria-label="Twitter" title="Twitter">
+					<a href="https://twitter.com/romainOddone" class="d-print-block" aria-label="Twitter"
+						title="Twitter">
 						<i class="fab fa-twitter"></i>
+						<span
+							class="d-none d-print-inline text-black-50 ml-4 position-absolute">https://twitter.com/romainOddone</span>
 					</a>
 				</div>
 			</div>
@@ -284,7 +298,7 @@
 						<i class="fab fa-npm" title="npm"></i>
 					</li>
 					<li class="list-inline-item">
-						<i class="fab fa-raspberry-pi" title="Rasperry Pi"></i>
+						<i class="fab fa-raspberry-pi" title="Raspberry Pi"></i>
 					</li>
 				</ul>
 
@@ -330,71 +344,106 @@
 			<div class="w-100">
 				<h2 class="mb-5">DIY</h2>
 				<div class="list-group">
-					<a href="https://github.com/roddone/YeelightAPI" target="_blank" rel="noreferrer" class="list-group-item list-group-item-action ">
+					<a href="https://github.com/roddone/YeelightAPI" target="_blank" rel="noreferrer"
+						class="text-decoration-none list-group-item list-group-item-action ">
 						<div class="d-flex w-100 justify-content-between">
 							<h5 class="mb-1">Yeelight API</h5>
 						</div>
 						<p class="mb-1">Library to remotely control Xiaomi Yeelight smart bulbs</p>
+						<p class="d-none d-print-block">
+							https://github.com/roddone/YeelightAPI
+						</p>
 						<p>
 							<span class="badge badge-primary">.Net</span>
 							<span class="badge badge-primary">IoT</span>
 						</p>
+
 					</a>
-					<a href="https://www.amazon.fr/Romain-ODDONE-Mon-planning-s%C3%A9ries/dp/B07N8WH5M9" target="_blank" rel="noreferrer" class="list-group-item list-group-item-action ">
+					<a href="https://www.amazon.fr/Romain-ODDONE-Mon-planning-s%C3%A9ries/dp/B07N8WH5M9" target="_blank" rel="noreferrer"
+						class="text-decoration-none list-group-item list-group-item-action ">
 						<div class="d-flex w-100 justify-content-between">
 							<h5 class="mb-1">Skill Alexa &quot;Mon Planning Séries&quot;</h5>
 						</div>
 						<p class="mb-1">Skill Alexa to fetch tv-shows calendar from BetaSeries</p>
+						<p class="d-none d-print-block">
+							https://www.amazon.fr/Romain-ODDONE-Mon-planning-s%C3%A9ries/dp/B07N8WH5M9
+						</p>
 						<p>
 							<span class="badge badge-primary">Node.Js</span>
 							<span class="badge badge-primary">Alexa</span>
 							<span class="badge badge-primary">TypeScript</span>
 							<span class="badge badge-primary">AWS</span>
+							<span class="badge badge-primary">Azure DevOps</span>
 						</p>
+
 					</a>
-					<a href="https://github.com/roddone/BetaSeries.Net" target="_blank" rel="noreferrer" class="list-group-item list-group-item-action ">
+					<a href="https://github.com/roddone/BetaSeries.Net" target="_blank" rel="noreferrer"
+						class="text-decoration-none list-group-item list-group-item-action ">
 						<div class="d-flex w-100 justify-content-between">
 							<h5 class="mb-1">BetaSeries.Net</h5>
 						</div>
 						<p class="mb-1">Wrapper library to use BetaSeries REST API</p>
+						<p class="d-none d-print-block">
+							https://github.com/roddone/BetaSeries.Net
+						</p>
 						<p>
 							<span class="badge badge-primary">.Net</span>
 						</p>
+
 					</a>
-					<a href="https://github.com/roddone/BraviaIRCCControl" target="_blank" rel="noreferrer" class="list-group-item list-group-item-action ">
+					<a href="https://github.com/roddone/BraviaIRCCControl" target="_blank" rel="noreferrer"
+						class="text-decoration-none list-group-item list-group-item-action ">
 						<div class="d-flex w-100 justify-content-between">
 							<h5 class="mb-1">BraviaIRCCControl</h5>
 						</div>
 						<p class="mb-1">Library to remotely control Sony Bravia devices through IRCC</p>
+						<p class="d-none d-print-block">
+							https://github.com/roddone/BraviaIRCCControl
+						</p>
 						<p>
 							<span class="badge badge-primary">.Net</span>
 							<span class="badge badge-primary">IoT</span>
 						</p>
+
 					</a>
-					<a href="https://github.com/myconstellation/constellation-packages" target="_blank" rel="noreferrer" class="list-group-item list-group-item-action ">
+					<a href="https://github.com/myconstellation/constellation-packages" target="_blank" rel="noreferrer"
+						class="text-decoration-none list-group-item list-group-item-action ">
 						<div class="d-flex w-100 justify-content-between">
 							<h5 class="mb-1">Packages Constellation</h5>
 						</div>
 						<p class="mb-1">Creation and maintenance of Constellation packages, the platform to orchestrate and interconnect your programs and devices</p>
+						<p class="d-none d-print-block">
+							https://github.com/myconstellation/constellation-packages
+						</p>
 						<p>
 							<span class="badge badge-primary">.Net</span>
 							<span class="badge badge-primary">IoT</span>
 						</p>
+
 					</a>
-					<a href="https://sdha.fr" target="_blank" rel="noreferrer" class="list-group-item list-group-item-action ">
+					<a href="https://sdha.fr" target="_blank" rel="noreferrer"
+						class="text-decoration-none list-group-item list-group-item-action ">
 						<div class="d-flex w-100 justify-content-between">
 							<h5 class="mb-1">SDHA</h5>
 						</div>
 						<p class="mb-1">Website of Société Dunkerquoise d&#x27;Histoire et d&#x27;Archéologie</p>
+						<p class="d-none d-print-block">
+							https://sdha.fr
+						</p>
 						<p>
 							<span class="badge badge-primary">Wordpress</span>
 						</p>
+
 					</a>
-					<a href="/" target="_blank" rel="noreferrer" class="list-group-item list-group-item-action ">
+					<a href="https://cv.roddone.ovh" target="_blank" rel="noreferrer"
+						class="text-decoration-none list-group-item list-group-item-action ">
 						<div class="d-flex w-100 justify-content-between">
 							<h5 class="mb-1">My resume</h5>
 						</div>
 						<p class="mb-1">My resume</p>
+						<p class="d-none d-print-block">
+							https://cv.roddone.ovh
+						</p>
 						<p>
 							<span class="badge badge-primary">Handlebars</span>
 							<span class="badge badge-primary">Bootstrap</span>
@@ -405,6 +454,7 @@
 							<span class="badge badge-primary">gulp</span>
 							<span class="badge badge-primary">Node.Js</span>
 						</p>
+
 					</a>
 				</div>
 			</div>
@@ -412,7 +462,8 @@
 
 	</div>
 
-	<div id="cookies" class="alert alert-danger alert-dismissible fade show mb-0 w-100 p-3 d-none" role="alert">
+	<div id="cookies" class="alert alert-danger alert-dismissible fade show mb-0 w-100 p-3 m-3 d-none d-print-none"
+		role="alert">
 		<strong>Cookies Alert !</strong> Ce CV utilise des cookies (Google Analytics).
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			<span aria-hidden="true">&times;</span>

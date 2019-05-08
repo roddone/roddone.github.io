@@ -203,3 +203,14 @@ a:hover, a:focus, a:active {
 .badge-primary {
   background-color: #17a2b8 !important;
 }
+
+@media print {
+  .badge-primary {
+    border: 0;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+  #page-top {
+    padding-left: 0px !important;
+  }
+}
