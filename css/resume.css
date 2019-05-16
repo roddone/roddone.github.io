@@ -213,4 +213,7 @@ a:hover, a:focus, a:active {
   #page-top {
     padding-left: 0px !important;
   }
+  hr {
+    display: none;
+  }
 }
