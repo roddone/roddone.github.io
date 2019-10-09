@@ -18,6 +18,35 @@
 	},
 	"experience": [
 		{
+			"title": "Software Applications Architect",
+			"company": "Publicis-ETO / Epsilon-France",
+			"descriptionParts": [
+				"Lead Technique et Opérationnel de l'équipe R&D",
+				"Etude des besoins puis mise en place des architectures applicatives adéquates, réalisation de socles techniques",
+				"Formation et accompagnement des développeurs au travers de formations, pair programming et de code reviews",
+				"Recherche et développement Back/Front/Cloud/DevOps",
+				"Partie technique des entretiens d'embauche"
+			],
+			"tags": [
+				".Net Framework 4.7",
+				".Net Core",
+				"TypeScript",
+				"JavaScript",
+				"Angular.Js 1.7",
+				"Angular 7",
+				"React",
+				"Vue.Js",
+				"SASS",
+				"Docker",
+				"TFS",
+				"Git",
+				"Gihub",
+				"Azure DevOps",
+				"Gitlab"
+			],
+			"timing": "Depuis Septembre 2019"
+		},
+		{
 			"title": "Technical Leader",
 			"company": "Publicis-ETO",
 			"descriptionParts": [
@@ -39,7 +68,7 @@
 				"Git",
 				"Azure DevOps"
 			],
-			"timing": "Depuis Septembre 2017"
+			"timing": "Septembre 2017 - Septembre 2019"
 		},
 		{
 			"title": "Développeur FullStack",
