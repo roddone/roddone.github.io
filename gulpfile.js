@@ -15,6 +15,7 @@ const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
 const concat = require("gulp-concat");
 const handlebars = require("gulp-compile-handlebars");
+const replace = require("gulp-replace");
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -53,7 +54,7 @@ function clean() {
 
 //clean dist
 function removeUnnecesaryFiles(){
-	return del(["./dist/css/", "./dist/js/", "./dist/vendor/bootstrap/", "./dist/vendor/jquery/", "./dist/vendor/jquery-easing/"]);
+	return del(["./dist/css/", "./dist/js/", "./dist/vendor/"]);
 }
 
 // Bring third party dependencies from node_modules into vendor directory
@@ -143,35 +144,46 @@ function html() {
 
 }
 
-function bundle() {
-	var js = gulp
-		.src([
-			"./dist/vendor/jquery/jquery.min.js",
-			'./dist/vendor/bootstrap/js/bootstrap.bundle.min.js',
-			'./dist/vendor/jquery-easing/jquery.easing.min.js',
-			'./dist/js/resume.min.js'
-		])
-		.pipe(concat('bundle.js'))
-		.pipe(gulp.dest('./dist'));
+function bundlecss(){
+	return gulp
+	.src([
+		"./dist/vendor/bootstrap/css/bootstrap.min.css",
+		"./dist/vendor/fontawesome-free/css/all.min.css",
+		'./dist/css/resume.min.css'
+	])
+	.pipe(concat('bundle.css'))
+	.pipe(replace(/..\/webfonts\//ig, "./fonts/"))
+	.pipe(gulp.dest('./dist'));
+}
 
-	var css = gulp
-		.src([
-			"./dist/vendor/bootstrap/css/bootstrap.min.css",
-			'./dist/css/resume.min.css'
-		])
-		.pipe(concat('bundle.css'))
-		.pipe(gulp.dest('./dist'));
-	return merge(js, css)
+function bundlejs(){
+	return gulp
+	.src([
+		"./dist/vendor/jquery/jquery.min.js",
+		'./dist/vendor/bootstrap/js/bootstrap.bundle.min.js',
+		'./dist/vendor/jquery-easing/jquery.easing.min.js',
+		'./dist/js/resume.min.js'
+	])
+	.pipe(concat('bundle.js'))
+	.pipe(gulp.dest('./dist'));
+}
+
+function bundle() {
+	var webfonts = gulp
+		.src("./dist/vendor/fontawesome-free/webfonts/**/*")
+		.pipe(gulp.dest('./dist/fonts'));
+
+	
+	return merge(bundlejs(), bundlecss(), webfonts);
 }
 
 // Watch files
 function watchFiles() {
-	gulp.watch("./scss/**/*", css);
-	gulp.watch("./js/**/*", js);
+	gulp.watch("./scss/**/*", gulp.series(css, bundlecss, browserSyncReload));
+	gulp.watch("./js/**/*", gulp.series(js, bundlejs, browserSyncReload));
 	gulp.watch("./img/**/*", img);
-	gulp.watch("./**/*.html", browserSyncReload);
-	gulp.watch("./lang/**/*.json", html);
-	gulp.watch("./**/*.hbs", html);
+	gulp.watch("./lang/**/*.json", gulp.series(html, browserSyncReload));
+	gulp.watch("./**/*.hbs", gulp.series(html, browserSyncReload));
 }
 
 // Define complex tasks
