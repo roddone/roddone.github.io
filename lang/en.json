@@ -28,21 +28,12 @@
 				"Technical part during job interviews"
 			],
 			"tags": [
-				".Net Framework 4.7",
-				".Net Core",
-				"TypeScript",
-				"JavaScript",
-				"Angular.Js 1.7",
-				"Angular 7",
-				"React",
-				"Vue.Js",
-				"SASS",
-				"Docker",
-				"TFS",
-				"Git",
-				"Gihub",
-				"Azure DevOps",
-				"Gitlab"
+				"Back-End",
+				"Front-End",
+				"Cloud",
+				"DevOps",
+				".Net",
+				"JavaScript"
 			],
 			"timing": "Since September 2019"
 		},

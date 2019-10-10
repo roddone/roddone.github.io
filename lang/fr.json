@@ -22,27 +22,18 @@
 			"company": "Publicis-ETO / Epsilon-France",
 			"descriptionParts": [
 				"Lead Technique et Opérationnel de l'équipe R&D",
-				"Etude des besoins puis mise en place des architectures applicatives adéquates, réalisation de socles techniques",
+				"Etude des besoins et supervision de la mise en place d'architectures applicatives, réalisation de socles techniques",
 				"Formation et accompagnement des développeurs au travers de formations, pair programming et de code reviews",
 				"Recherche et développement Back/Front/Cloud/DevOps",
 				"Partie technique des entretiens d'embauche"
 			],
 			"tags": [
-				".Net Framework 4.7",
-				".Net Core",
-				"TypeScript",
-				"JavaScript",
-				"Angular.Js 1.7",
-				"Angular 7",
-				"React",
-				"Vue.Js",
-				"SASS",
-				"Docker",
-				"TFS",
-				"Git",
-				"Gihub",
-				"Azure DevOps",
-				"Gitlab"
+				"Back-End",
+				"Front-End",
+				"Cloud",
+				"DevOps",
+				".Net",
+				"JavaScript"
 			],
 			"timing": "Depuis Septembre 2019"
 		},
