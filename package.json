@@ -4,7 +4,8 @@
     "version": "1.0.0",
     "scripts": {
         "start": "gulp watch",
-        "build": "gulp"
+		"build": "gulp",
+		"pack": "gulp pack"
     },
     "description": "My resume, forked from https://github.com/BlackrockDigital/startbootstrap-resume",
     "keywords": [

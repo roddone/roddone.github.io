@@ -34,7 +34,8 @@ function browserSync(done) {
 		server: {
 			baseDir: "./dist"
 		},
-		port: 3000
+		port: 8080,
+		ui:false
 	});
 	done();
 }
@@ -48,6 +49,11 @@ function browserSyncReload(done) {
 // Clean vendor
 function clean() {
 	return del(["./vendor/", './dist/']);
+}
+
+//clean dist
+function removeUnnecesaryFiles(){
+	return del(["./dist/css/", "./dist/js/", "./dist/vendor/bootstrap/", "./dist/vendor/jquery/", "./dist/vendor/jquery-easing/"]);
 }
 
 // Bring third party dependencies from node_modules into vendor directory
@@ -172,6 +178,7 @@ function watchFiles() {
 const vendor = gulp.series(clean, modules);
 const build = gulp.series(vendor, gulp.parallel(html, img, css, js), bundle);
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
+const pack = gulp.series(vendor, gulp.parallel(html, img, css, js), bundle, removeUnnecesaryFiles);
 
 // Export tasks
 exports.css = css;
@@ -183,3 +190,4 @@ exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;
+exports.pack = pack;
