@@ -29,5 +29,17 @@ section.resume-section {
 #cookies{
   position: fixed;
   bottom: 0px;
-  max-width: 75rem;
+  max-width: 45rem;
+  padding-right:31px !important;
+  z-index: 10000;
+}
+
+@media (max-width:768px){
+	#cookies{
+		max-width: 90%;
+	}
+}
+
+#scrolltop{
+	background-color:$primary !important;
 }

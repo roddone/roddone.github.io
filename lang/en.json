@@ -255,5 +255,9 @@
 				"Agile Development &amp; Scrum"
 			]
 		}
+	},
+	"cookies":{
+		"title": "Cookies Alert !",
+		"description":"This resume uses cookies (Google Analytics)."
 	}
 }

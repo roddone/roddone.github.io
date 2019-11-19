@@ -46,4 +46,6 @@
 		setCookie('cookie_accept', true);
 	});
 
+	$('#scrolltop').scrollTopButton();
+
 })(jQuery); // End of use strict

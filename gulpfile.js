@@ -36,7 +36,7 @@ function browserSync(done) {
 			baseDir: "./dist"
 		},
 		port: 8080,
-		ui:false
+		ui: false
 	});
 	done();
 }
@@ -49,11 +49,11 @@ function browserSyncReload(done) {
 
 // Clean vendor
 function clean() {
-	return del(["./vendor/", './dist/']);
+	return del(['./dist/']);
 }
 
 //clean dist
-function removeUnnecesaryFiles(){
+function removeUnnecesaryFiles() {
 	return del(["./dist/css/", "./dist/js/", "./dist/vendor/"]);
 }
 
@@ -68,13 +68,16 @@ function modules() {
 	// jQuery Easing
 	var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
 		.pipe(gulp.dest('./dist/vendor/jquery-easing'));
+	// jQuery Scrolltop button
+	let jqueryScrolltopButton = gulp.src('./vendor/*.js')
+		.pipe(gulp.dest('./dist/vendor'));
 	// jQuery
 	var jquery = gulp.src([
 		'./node_modules/jquery/dist/*',
 		'!./node_modules/jquery/dist/core.js'
 	])
 		.pipe(gulp.dest('./dist/vendor/jquery'));
-	return merge(bootstrap, fontAwesome, jquery, jqueryEasing);
+	return merge(bootstrap, fontAwesome, jquery, jqueryEasing, jqueryScrolltopButton);
 }
 
 // CSS task
@@ -144,28 +147,29 @@ function html() {
 
 }
 
-function bundlecss(){
+function bundlecss() {
 	return gulp
-	.src([
-		"./dist/vendor/bootstrap/css/bootstrap.min.css",
-		"./dist/vendor/fontawesome-free/css/all.min.css",
-		'./dist/css/resume.min.css'
-	])
-	.pipe(concat('bundle.css'))
-	.pipe(replace(/..\/webfonts\//ig, "./fonts/"))
-	.pipe(gulp.dest('./dist'));
+		.src([
+			"./dist/vendor/bootstrap/css/bootstrap.min.css",
+			"./dist/vendor/fontawesome-free/css/all.min.css",
+			'./dist/css/resume.min.css'
+		])
+		.pipe(concat('bundle.css'))
+		.pipe(replace(/..\/webfonts\//ig, "./fonts/"))
+		.pipe(gulp.dest('./dist'));
 }
 
-function bundlejs(){
+function bundlejs() {
 	return gulp
-	.src([
-		"./dist/vendor/jquery/jquery.min.js",
-		'./dist/vendor/bootstrap/js/bootstrap.bundle.min.js',
-		'./dist/vendor/jquery-easing/jquery.easing.min.js',
-		'./dist/js/resume.min.js'
-	])
-	.pipe(concat('bundle.js'))
-	.pipe(gulp.dest('./dist'));
+		.src([
+			"./dist/vendor/jquery/jquery.min.js",
+			'./dist/vendor/bootstrap/js/bootstrap.bundle.min.js',
+			'./dist/vendor/jquery-easing/jquery.easing.min.js',
+			'./dist/vendor/jquery.scrolltop.button.min.js',
+			'./dist/js/resume.min.js'
+		])
+		.pipe(concat('bundle.js'))
+		.pipe(gulp.dest('./dist'));
 }
 
 function bundle() {
@@ -173,7 +177,7 @@ function bundle() {
 		.src("./dist/vendor/fontawesome-free/webfonts/**/*")
 		.pipe(gulp.dest('./dist/fonts'));
 
-	
+
 	return merge(bundlejs(), bundlecss(), webfonts);
 }
 

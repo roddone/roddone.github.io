@@ -255,5 +255,9 @@
 				"Agile Development &amp; Scrum"
 			]
 		}
+	},
+	"cookies":{
+		"title": "Cookies Alert !",
+		"description":"Ce CV utilise des cookies (Google Analytics)."
 	}
 }
