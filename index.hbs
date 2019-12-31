@@ -117,25 +117,26 @@
 				<h2 class="mb-5">{{navbar.experience}}</h2>
 
 				{{#experience}}
-				<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-					<div class="resume-content">
-						<h3 class="mb-0">{{title}}</h3>
-						<div class="subheading mb-3">{{company}}</div>
-						{{#descriptionParts}}
-						<p>
-							{{{this}}}
-						</p>
-						{{/descriptionParts}}
-						<p>
-							{{#tags}}
-							<span class="badge badge-primary">{{this}}</span>
-							{{/tags}}
-						</p>
+					<div class="resume-item mb-5 d-flex flex-column flex-md-row justify-content-between">
+						<div class="resume-content">
+							<h3 class="mb-0">{{title}}</h3>
+							<div class="subheading mb-3">{{company}}</div>
+							{{#descriptionParts}}
+							<p>
+								{{{this}}}
+							</p>
+							{{/descriptionParts}}
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">{{timing}}</span>
+							<div class="mt-3">
+								{{#tags}}
+								<span class="badge badge-primary">{{this}}</span>
+								{{/tags}}
+							</div>
+						</div>
 					</div>
-					<div class="resume-date text-md-right">
-						<span class="text-primary">{{timing}}</span>
-					</div>
-				</div>
+
 				{{/experience}}
 
 			</div>
