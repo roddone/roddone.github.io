@@ -198,7 +198,7 @@
 	],
 	"skills": {
 		"languagesAndTools": {
-			"title": "Languages &amp; Tools",
+			"title": "Langages &amp; Outils",
 			"items": [
 				{
 					"icon": "fab fa-windows",
@@ -207,6 +207,10 @@
 				{
 					"icon": "fab fa-linux",
 					"title": "Linux"
+				},
+				{
+					"icon": "fab fa-docker",
+					"title": "Docker"
 				},
 				{
 					"icon": "fab fa-html5",
@@ -225,16 +229,20 @@
 					"title": "Angular"
 				},
 				{
+					"icon": "fab fa-vuejs",
+					"title": "Vue.js"
+				},
+				{
+					"icon": "fab fa-react",
+					"title": "React.Js"
+				},
+				{
 					"icon": "fab fa-node-js",
 					"title": "Node.Js"
 				},
 				{
 					"icon": "fab fa-sass",
 					"title": "SASS"
-				},
-				{
-					"icon": "fab fa-wordpress",
-					"title": "Wordpress"
 				},
 				{
 					"icon": "fab fa-npm",

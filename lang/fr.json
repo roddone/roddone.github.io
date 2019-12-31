@@ -10,16 +10,16 @@
 		"skills": "Skills",
 		"interests": "Intérêts",
 		"diy": "Réalisations",
-		"otherLinkUrl":"/english.html",
-		"otherLinkText":"English ?"
+		"otherLinkUrl": "/english.html",
+		"otherLinkText": "English ?"
 	},
 	"about": {
 		"description": "Architecte Logiciel et Développeur FullStack, je me suis spécialisé dans les technologies Microsoft et le développement Front-End sur divers Frameworks.</br>J'ai également eu l'occasion de développer des expériences dans le développement mobile et l'IoT."
 	},
 	"experience": [
 		{
+			"company" : "Epsilon-France / Publicis-ETO",
 			"title": "Software Applications Architect",
-			"company": "Publicis-ETO / Epsilon-France",
 			"descriptionParts": [
 				"Lead Technique et Opérationnel de l'équipe R&D",
 				"Etude des besoins et supervision de la mise en place d'architectures applicatives, réalisation de socles techniques",
@@ -192,7 +192,14 @@
 			"title": "Mon CV",
 			"description": "Mon Curriculum Vitae",
 			"tags": [
-				"Handlebars", "Bootstrap", "github.io", "Azure DevOps", "JavaScript", "SASS", "gulp", "Node.Js"
+				"Handlebars",
+				"Bootstrap",
+				"github.io",
+				"Azure DevOps",
+				"JavaScript",
+				"SASS",
+				"gulp",
+				"Node.Js"
 			]
 		}
 	],
@@ -207,6 +214,10 @@
 				{
 					"icon": "fab fa-linux",
 					"title": "Linux"
+				},
+				{
+					"icon": "fab fa-docker",
+					"title": "Docker"
 				},
 				{
 					"icon": "fab fa-html5",
@@ -225,16 +236,20 @@
 					"title": "Angular"
 				},
 				{
+					"icon": "fab fa-vuejs",
+					"title": "Vue.js"
+				},
+				{
+					"icon": "fab fa-react",
+					"title": "React.Js"
+				},
+				{
 					"icon": "fab fa-node-js",
 					"title": "Node.Js"
 				},
 				{
 					"icon": "fab fa-sass",
 					"title": "SASS"
-				},
-				{
-					"icon": "fab fa-wordpress",
-					"title": "Wordpress"
 				},
 				{
 					"icon": "fab fa-npm",
@@ -256,8 +271,8 @@
 			]
 		}
 	},
-	"cookies":{
+	"cookies": {
 		"title": "Cookies Alert !",
-		"description":"Ce CV utilise des cookies (Google Analytics)."
+		"description": "Ce CV utilise des cookies (Google Analytics)."
 	}
 }
