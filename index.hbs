@@ -71,7 +71,7 @@
 
 	<div class="container-fluid p-0">
 
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center print-force-fullpage" id="about">
 			<div class="w-100">
 				<h1 class="mb-0">
 					<span class="d-none d-print-inline">
@@ -144,7 +144,7 @@
 
 		<hr class="m-0">
 
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center print-new-page print-reduce-padding" id="education">
 			<div class="w-100">
 				<h2 class="mb-5">{{navbar.education}}</h2>
 
@@ -165,7 +165,7 @@
 
 		<hr class="m-0">
 
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center print-reduce-padding" id="skills">
 			<div class="w-100">
 				<h2 class="mb-5">{{navbar.skills}}</h2>
 
@@ -173,7 +173,14 @@
 				<ul class="list-inline dev-icons">
 					{{#skills.languagesAndTools.items}}
 					<li class="list-inline-item">
-						<i class="{{icon}}" title="{{title}}"></i>
+						{{#if group}}
+							<div class="row d-inline">
+							{{#items}}<i class="col-12 {{icon}}" title="{{title}}"></i>
+							{{/items}}
+							</div>
+						{{else}}
+							<i class="{{icon}}" title="{{title}}"></i>							
+						{{/if}}
 					</li>
 					{{/skills.languagesAndTools.items}}
 				</ul>
@@ -193,7 +200,7 @@
 
 		<hr class="m-0">
 
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center print-reduce-padding" id="interests">
 			<div class="w-100">
 				<h2 class="mb-5">{{navbar.interests}}</h2>
 				{{#interests}}
@@ -204,7 +211,7 @@
 
 		<hr class="m-0">
 
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="diy">
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center print-new-page" id="diy">
 			<div class="w-100">
 				<h2 class="mb-5">{{navbar.diy}}</h2>
 				<div class="list-group">

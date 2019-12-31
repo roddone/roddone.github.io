@@ -1,17 +1,49 @@
-@media print{
-    
-    .badge-primary{
-        border:0;
-        -webkit-print-color-adjust: exact;
-        color-adjust: exact;
-    }
-      
-    #page-top {
-        padding-left:0px !important;
-    }
+@media print {
+  .badge-primary {
+    border: 0;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
 
-    hr{
-        display:none;
+  #page-top {
+    padding-left: 0px !important;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .resume-section {
+    min-height: unset !important;
+  }
+
+  .print-force-fullpage {
+    min-height: 100vh !important;
+  }
+
+  .print-new-page {
+    page-break-before: always;
+  }
+
+  h2.mb-5 {
+    margin-bottom: 1rem !important;
+  }
+
+  .resume-section.print-reduce-padding {
+    //padding-top:2rem!important;
+    padding-bottom: 1rem !important;
+  }
+
+  #experience {
+    padding-top: 0rem !important;
+    .resume-item {
+      margin-bottom: 1rem !important;
     }
-      
+    .subheading.mb-3 {
+      margin-bottom: 0.5rem !important;
+    }
+    .resume-content {
+      line-height: normal;
+    }
+  }
 }
