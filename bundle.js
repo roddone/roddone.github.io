@@ -21,7 +21,7 @@
 (function(e){var t=function(t,n){function r(){if(e(window).scrollTop()>n.scrollHeight){t.fadeIn(200)}else if(e(window).scrollTop()<=n.scrollHeight){t.fadeOut(200)}}function i(){e("body,html").animate({scrollTop:0},n.scrollDuration)}function s(){if(!n.customCss){t.css({bottom:"20px",right:"20px",width:"40px",height:"40px","border-radius":"50%","background-color":"#72B8B8",cursor:"pointer"});t.html('<span style="display:block; height:40px; line-height:40px; text-align:center; color:#ffffff"><strong>&and;</strong></span>')}t.css({display:"none",position:"fixed","z-index":"9999"}).bind("click",i);r()}e(window).scroll(function(){r()});s()};e.fn.scrollTopButton=function(n){var r={scrollHeight:300,scrollDuration:500,customCss:0};var n=e.extend({},r,n);return t(this,n)}})(jQuery)
 /*!
  * Start Bootstrap - Resume v1.0.0 ()
- * Copyright 2013-2019 
+ * Copyright 2013-2021 
  * Licensed under MIT (https://github.com/BlackrockDigital/roddone-resume/blob/master/LICENSE)
  */
 
